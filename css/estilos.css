@@ -255,12 +255,17 @@ header {
   background-color: rgb(77, 77, 77);
 }
 
+main {
+  animation: fadeIn;
+  animation-duration: 1s;
+}
+
 .home-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  background-image: radial-gradient(#f3c9dd, #e2abbe);
+  background-image: radial-gradient(#C074DD, #73368b);
   height: 100vh;
 }
 .home-left h1 {

@@ -209,13 +209,17 @@ header{
 
 //MAIN
 
+main{
+    animation: fadeIn;
+    animation-duration: 1s;
+}
 
 .home-left{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;    
-    background-image: radial-gradient($rosa,$rosa-oscuro);
+    background-image: radial-gradient($violeta,$violeta-oscuro);
     height: $h-100-v3ktor;
     
 
