@@ -257,16 +257,23 @@ header {
 
 .home-left {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   background-image: radial-gradient(#f3c9dd, #e2abbe);
   height: 100vh;
-  justify-content: end;
-  align-items: center;
 }
 .home-left h1 {
-  font-size: 6em;
+  font-size: 5em;
   font-family: "nunito-bold";
   text-transform: uppercase;
   color: #FFF;
+  text-align: right;
+}
+.home-left .texto {
+  font-size: 1.4em;
+  color: #FFF;
+  text-align: right;
 }
 
 .home-right {
@@ -274,6 +281,8 @@ header {
   background-image: radial-gradient(#67d6ea, #12abca);
   height: 100vh;
   align-items: center;
+  background-image: url(../assets/img_index.jpg);
+  background-size: cover;
 }
 .home-right h1 {
   font-size: 6em;

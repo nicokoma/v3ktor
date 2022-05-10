@@ -211,18 +211,28 @@ header{
 
 
 .home-left{
-    display: flex;        
-    //background-color: $rosa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;    
     background-image: radial-gradient($rosa,$rosa-oscuro);
     height: $h-100-v3ktor;
-    justify-content: end;
-    align-items: center;
+    
 
     h1{
-        font-size: 6em;
+        font-size: 5em;
         font-family: $tipografia-v3ktor-bold;
         text-transform: uppercase;
         color: $blanco;
+        text-align: right;
+        //text-shadow: 0px 0px 10px black;
+    }
+
+    .texto{
+        font-size: 1.4em;
+        color: $blanco;
+        text-align: right;
+
     }
 }
 
@@ -232,6 +242,8 @@ header{
     background-image: radial-gradient($celeste,$celeste-oscuro );
     height: $h-100-v3ktor;
     align-items: center;
+    background-image: url(../assets/img_index.jpg);
+    background-size: cover;
 
     h1{
         font-size: 6em;
