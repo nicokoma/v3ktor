@@ -265,7 +265,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  background-image: radial-gradient(#C074DD, #73368b);
+  background-image: radial-gradient(#ccaacf, #aa82ad);
   height: 100vh;
 }
 .home-left h1 {
