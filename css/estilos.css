@@ -810,6 +810,37 @@ main {
     position: static;
   }
 
+  .home-left {
+    height: 70vh;
+  }
+  .home-left h1 {
+    font-size: 3em;
+    font-family: "nunito-bold";
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: right;
+  }
+  .home-left .texto {
+    font-size: 1em;
+    color: #FFF;
+    text-align: right;
+  }
+
+  .home-right {
+    display: flex;
+    background-image: radial-gradient(#67d6ea, #12abca);
+    height: 30vh;
+    align-items: center;
+    background-image: url(../assets/img_index.jpg);
+    background-size: cover;
+  }
+  .home-right h1 {
+    font-size: 6em;
+    font-family: "nunito-bold";
+    text-transform: uppercase;
+    color: #FFF;
+  }
+
   .principal {
     display: grid;
     grid-template-columns: 5% 1fr 5%;
@@ -852,7 +883,7 @@ main {
     display: flex;
     grid-column: 2;
     grid-row: 3/4;
-    font-family: "ubuntu-light";
+    font-family: "nunito-regular";
   }
   .quienes-home .imagen-nosotros {
     display: flex;
@@ -1012,7 +1043,7 @@ main {
     grid-area: texto;
     font-weight: 100;
     padding-left: 30px;
-    font-family: "ubuntu-light";
+    font-family: "nunito-regular";
     padding-left: 0;
   }
   .principal-nosotros .boton, .principal-nosotros .quienes-home a, .quienes-home .principal-nosotros a, .principal-nosotros .quienes-home button, .quienes-home .principal-nosotros button, .principal-nosotros .cliente a, .cliente .principal-nosotros a {
@@ -1091,10 +1122,9 @@ main {
   }
 
   /***SERVICIOS MOBILE***/
-  .servicios-2, .servicios {
-    height: 220vh;
-  }
-
+  /*.servicios-2{
+      height: 220vh;
+  }*/
   .principal-servicio {
     height: 190vh;
     display: grid;
@@ -1148,7 +1178,7 @@ main {
 
   .principal-servicio .texto {
     margin-bottom: 15px;
-    font-family: "ubuntu-light";
+    font-family: "nunito-regular";
   }
 
   /***CONTACTO MOBILE***/
