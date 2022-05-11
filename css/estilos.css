@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "nunito-regular";
-  src: url("../assets/fonts/Nunito-Regular.ttf");
+  font-family: "outfit-regular";
+  src: url("../assets/fonts/Outfit-Regular.ttf");
 }
 @font-face {
-  font-family: "nunito-light";
-  src: url("../assets/fonts/Nunito-Light.ttf");
+  font-family: "outfit-light";
+  src: url("../assets/fonts/Outfit-Light.ttf");
 }
 @font-face {
-  font-family: "nunito-bold";
-  src: url("../assets/fonts/Nunito-Bold.ttf");
+  font-family: "outfit-bold";
+  src: url("../assets/fonts/Outfit-Bold.ttf");
 }
 .tarjeta, .tarjeta__3, .tarjeta__2 {
   width: 100%;
@@ -30,13 +30,13 @@
   font-size: 24px;
   color: #FFFFFF;
   font-weight: 700;
-  font-family: "nunito-bold";
+  font-family: "outfit-bold";
 }
 
 .tarjeta .texto, .tarjeta__3 .texto, .tarjeta__2 .texto {
   font-size: 18px;
   font-weight: 200;
-  font-family: "nunito-regular";
+  font-family: "outfit-regular";
 }
 
 h1 {
@@ -145,7 +145,7 @@ html, body {
 }
 
 body {
-  font-family: "nunito-regular";
+  font-family: "outfit-regular";
 }
 
 h1 {
@@ -153,7 +153,7 @@ h1 {
 }
 
 h1, h2, p, button, a, .boton, .cliente a, .quienes-home button, .quienes-home a {
-  font-family: "nunito-regular";
+  font-family: "outfit-regular";
 }
 
 h1 {
@@ -270,7 +270,7 @@ main {
 }
 .home-left h1 {
   font-size: 5em;
-  font-family: "nunito-bold";
+  font-family: "outfit-bold";
   text-transform: uppercase;
   color: #FFF;
   text-align: right;
@@ -291,7 +291,7 @@ main {
 }
 .home-right h1 {
   font-size: 6em;
-  font-family: "nunito-bold";
+  font-family: "outfit-bold";
   text-transform: uppercase;
   color: #FFF;
 }
@@ -321,7 +321,7 @@ main {
   animation-duration: 200ms;
   animation-delay: 1s;
   font-size: 5em;
-  font-family: "nunito-bold";
+  font-family: "outfit-bold";
   letter-spacing: -2px;
 }
 .principal .texto {
@@ -365,7 +365,7 @@ main {
   display: flex;
   grid-column: 2/6;
   grid-row: 3/4;
-  font-family: "nunito-light";
+  font-family: "outfit-light";
   line-height: 24px;
 }
 .quienes-home img {
@@ -402,7 +402,7 @@ main {
 }
 
 .descripcion-home {
-  font-family: "nunito-bold";
+  font-family: "outfit-bold";
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(9, 1fr);
@@ -419,7 +419,7 @@ main {
   grid-row: 3;
   color: #FFF;
   font-size: 20px;
-  font-family: "nunito-light";
+  font-family: "outfit-light";
   align-items: end;
   margin-left: 40px;
 }
@@ -431,7 +431,7 @@ main {
   box-sizing: border-box;
   margin-left: 40px;
   line-height: 65px;
-  font-family: "nunito-light";
+  font-family: "outfit-light";
 }
 .descripcion-home .conceptos {
   display: flex;
@@ -538,7 +538,7 @@ main {
 .servicios-2, .servicios {
   display: flex;
   align-items: center;
-  background-image: linear-gradient(#f3c9dd, #e2abbe);
+  background-image: linear-gradient(#ccaacf, #aa82ad);
 }
 .servicios-2 .titulo, .servicios .titulo {
   color: #000;
@@ -608,7 +608,7 @@ main {
   font-size: 4em;
   text-align: right;
   line-height: 65px;
-  font-family: "nunito-bold";
+  font-family: "outfit-bold";
   animation: bounceIn;
   animation-duration: 1s;
 }
@@ -815,7 +815,7 @@ main {
   }
   .home-left h1 {
     font-size: 3em;
-    font-family: "nunito-bold";
+    font-family: "outfit-bold";
     text-transform: uppercase;
     color: #FFF;
     text-align: right;
@@ -836,7 +836,7 @@ main {
   }
   .home-right h1 {
     font-size: 6em;
-    font-family: "nunito-bold";
+    font-family: "outfit-bold";
     text-transform: uppercase;
     color: #FFF;
   }
@@ -883,7 +883,7 @@ main {
     display: flex;
     grid-column: 2;
     grid-row: 3/4;
-    font-family: "nunito-regular";
+    font-family: "outfit-regular";
   }
   .quienes-home .imagen-nosotros {
     display: flex;
@@ -914,7 +914,7 @@ main {
     grid-column: 2;
     grid-row: 1;
     font-size: 20px;
-    font-family: "nunito-light";
+    font-family: "outfit-light";
     color: #FFF;
     align-items: end;
     margin-left: 0px;
@@ -928,7 +928,7 @@ main {
     margin-left: 0px;
     line-height: 40px;
     font-size: 0.7em;
-    font-family: "nunito-light";
+    font-family: "outfit-light";
   }
   .descripcion-home .conceptos {
     display: flex;
@@ -1043,7 +1043,7 @@ main {
     grid-area: texto;
     font-weight: 100;
     padding-left: 30px;
-    font-family: "nunito-regular";
+    font-family: "outfit-regular";
     padding-left: 0;
   }
   .principal-nosotros .boton, .principal-nosotros .quienes-home a, .quienes-home .principal-nosotros a, .principal-nosotros .quienes-home button, .quienes-home .principal-nosotros button, .principal-nosotros .cliente a, .cliente .principal-nosotros a {
@@ -1091,18 +1091,14 @@ main {
     width: 290px;
   }
 
+  .portfolio-home {
+    margin-bottom: 0 !important;
+  }
+
   .section-video {
     display: flex;
     align-items: center;
     text-align: center;
-    /*.solido-negro{
-        background-color: $negro;
-        opacity: .5;
-        position: absolute;
-        z-index: 90;
-        width: 100%;
-        height: 32vh;
-    }*/
   }
   .section-video .video-home {
     width: 100%;
@@ -1115,10 +1111,10 @@ main {
     opacity: 0.7;
   }
   .section-video .titulo {
-    font-family: "nunito-bold";
-    font-size: 2em;
+    font-family: "outfit-bold";
+    font-size: 0.5em;
     text-align: left;
-    line-height: 20px;
+    line-height: 40px;
   }
 
   /***SERVICIOS MOBILE***/
@@ -1178,7 +1174,7 @@ main {
 
   .principal-servicio .texto {
     margin-bottom: 15px;
-    font-family: "nunito-regular";
+    font-family: "outfit-regular";
   }
 
   /***CONTACTO MOBILE***/

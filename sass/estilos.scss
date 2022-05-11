@@ -600,7 +600,7 @@ main{
     //height: 120vh;
     display: flex;
     align-items: center;
-    background-image: linear-gradient($rosa, $rosa-oscuro);
+    background-image: linear-gradient($violeta, $violeta-oscuro);
 
     .titulo{
         color: $negro;
@@ -1353,26 +1353,21 @@ $colores-servicios: (
     
 }
 
+.portfolio-home{
+    margin-bottom: 0 !important;
+}
+
 
 
 //VIDEO mobile
 .section-video{
     display: flex;
     align-items: center;
-    //background-color: $negro;
     text-align: center;
     .video-home{
         width: 100%;
     }
 
-    /*.solido-negro{
-        background-color: $negro;
-        opacity: .5;
-        position: absolute;
-        z-index: 90;
-        width: 100%;
-        height: 32vh;
-    }*/
 
     .content{
         position: absolute;
@@ -1384,9 +1379,9 @@ $colores-servicios: (
 
     .titulo{
         font-family: $tipografia-v3ktor-bold;
-        font-size:2em;
+        font-size:.5em;
         text-align: left;
-        line-height: 20px;
+        line-height: 40px;
     }
 }
 

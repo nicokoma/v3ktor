@@ -1,6 +1,6 @@
-$tipografia-v3ktor: 'nunito-regular';
-$tipografia-v3ktor-light: 'nunito-light';
-$tipografia-v3ktor-bold: 'nunito-bold';
+$tipografia-v3ktor: 'outfit-regular';
+$tipografia-v3ktor-light: 'outfit-light';
+$tipografia-v3ktor-bold: 'outfit-bold';
 $tamano-h1: 40px;
 $tamano-h2: 30px;
 $tamano-h3: 20px;
@@ -11,15 +11,15 @@ $tipografia-gris: #777;
 
 @font-face{
     font-family: $tipografia-v3ktor;
-    src: url('../assets/fonts/Nunito-Regular.ttf');
+    src: url('../assets/fonts/Outfit-Regular.ttf');
 }
 
 @font-face{
     font-family: $tipografia-v3ktor-light;
-    src: url('../assets/fonts/Nunito-Light.ttf');
+    src: url('../assets/fonts/Outfit-Light.ttf');
 }
 
 @font-face{
     font-family: $tipografia-v3ktor-bold;
-    src: url('../assets/fonts/Nunito-Bold.ttf');
+    src: url('../assets/fonts/Outfit-Bold.ttf');
 }
