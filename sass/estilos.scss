@@ -325,60 +325,46 @@ main{
 //QUIENES SOMOS
 .quienes-home{
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(9,1fr);
-    grid-template-rows: repeat(6,1fr);
+    display: flex;
     animation: fadeIn;
     animation-duration: 1s;
 
-    .titulo{
+    .home-right-quienes{
         display: flex;
-        grid-column: 2/5;
-        grid-row: 2/3;
-        align-items: end;
-        font-size: $tamano-h1;
-        margin-bottom: 10px;
-    }
-
-    .texto{
-        display: flex;
-        grid-column: 2/6;
-        grid-row: 3/4;
-        font-family: $tipografia-v3ktor-light;
-        line-height: 24px;
-    }
-
-    img{
-        display: flex;
-        grid-column: 6/9;
-        grid-row: 2/6;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;    
+        height: $h-100-v3ktor;
+        
+    
+        h1{
+            font-size: 3em;
+            font-family: $tipografia-v3ktor-bold;
+            color: $negro;
+            text-align: right;
+            //text-shadow: 0px 0px 10px black;
+        }
+    
+        .texto{
+            font-size: 1.2em;
+            color: $negro;
+            text-align: right;
+            letter-spacing: 1px;
+            line-height: 30px;
+    
+        }
     }
     
-    a{
-        @extend .boton;
-        margin-top: 20px;
+    .home-left-quienes{
         display: flex;
-        grid-column: 2;
-        grid-row: 4;
-        justify-content: center;
-        text-decoration: none;
-        
-    }
-
-    button:hover{
-        background: rgb(45, 45, 45);
-        color: $blanco;
-    }   
-
-    button{
-        @extend .boton;
-        margin-top: 20px;
-        display: flex;
-        grid-column: 2;
-        grid-row: 4;
-        justify-content: center;
-        text-decoration: none;
-        
+        //background-color: $celeste;
+        background-image: radial-gradient($celeste,$celeste-oscuro );
+        height: $h-100-v3ktor;
+        align-items: center;
+        background-image: url(../assets/img_quienes.jpg);
+        background-size: cover;
+        background-position: center;
+    
     }
 
     .cerrar{
@@ -477,8 +463,8 @@ main{
 
     .titulo{
         color: $negro;
+        font-family: $tipografia-v3ktor-bold;
         font-size: $tamano-h1;
-        font-weight: 800;
         justify-content: center;
         margin: 40px 0;
         
@@ -606,6 +592,8 @@ main{
     .titulo{
         color: $negro;
         margin: 40px 0;
+        font-size: $tamano-h1;
+        font-family: $tipografia-v3ktor-bold;
     }
 
     .texto{
@@ -1060,41 +1048,61 @@ $colores-servicios: (
 
 
     .quienes-home{
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 5% 1fr 5%;
-        grid-template-rows: repeat(6,1fr);
-
-        .titulo{
+        display: flex;
+        animation: fadeIn;
+        animation-duration: 1s;
+    
+        .home-right-quienes{
             display: flex;
-            grid-column: 2;
-            grid-row: 2;
-            font-size: 30px;
-            margin-bottom: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;    
+            height: $h-100-v3ktor;
+            
+        
+            h1{
+                font-size: 3em;
+                font-family: $tipografia-v3ktor-bold;
+                color: $negro;
+                text-align: right;
+                //text-shadow: 0px 0px 10px black;
+            }
+        
+            .texto{
+                font-size: 1.2em;
+                color: $negro;
+                text-align: right;
+                letter-spacing: 1px;
+                line-height: 30px;
+        
+            }
         }
-
-        .texto{
+        
+        .home-left-quienes{
             display: flex;
-            grid-column: 2;
-            grid-row: 3/4;
-            font-family: $tipografia-v3ktor
+            //background-color: $celeste;
+            background-image: radial-gradient($celeste,$celeste-oscuro );
+            height: 30vh;
+            align-items: center;
+            background-image: url(../assets/img_quienes.jpg);
+            background-size: cover;
+            background-position: center;
+        
         }
-
-        .imagen-nosotros{
-            display: flex;
-            grid-column: 2;
-            grid-row: 5;
-            width: 300px;
-            justify-self: center;
+    
+        .cerrar{
+            margin-top: 0;
+            padding: 8px;
+            width: 40px;
+            height: 40px;
+            //Variable Local
+            $borde-redondeado:20px;
+            border-radius: $borde-redondeado;
         }
-
-        img{
-            display: flex;
-            grid-column: 6/9;
-            grid-row: 2/6;
-        }
-
+        
+        
     }
+    
 
 
 //DESCRIPCION
@@ -1259,14 +1267,7 @@ $colores-servicios: (
 
     .principal-nosotros{
         height: 100vh;
-        display: grid;
-        grid-template-columns: 5% 1fr 5%;
-        grid-template-rows: repeat(4,1fr);
-        grid-template-areas: "foto foto foto"
-                             ". titulo ."
-                             ". texto ."
-                             ". boton ."
-        ;
+        display: flex;
 
         img{
             width: 90%;
@@ -1396,10 +1397,8 @@ $colores-servicios: (
 }*/
 
 .principal-servicio{
-    height: 190vh;
-    display: grid;
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: repeat(6,1fr);
+    //height: 190vh;
+    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -1412,8 +1411,6 @@ $colores-servicios: (
     .servicios{
         display: flex;
         flex-wrap: wrap;
-        grid-column: 2;
-        grid-row: 4;
         justify-content: center;
     
     }
