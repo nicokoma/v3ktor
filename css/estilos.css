@@ -279,6 +279,7 @@ main {
   font-size: 1.4em;
   color: #FFF;
   text-align: right;
+  letter-spacing: 1px;
 }
 
 .home-right {
@@ -538,7 +539,6 @@ main {
 .servicios-2, .servicios {
   display: flex;
   align-items: center;
-  background-image: linear-gradient(#ccaacf, #aa82ad);
 }
 .servicios-2 .titulo, .servicios .titulo {
   color: #000;

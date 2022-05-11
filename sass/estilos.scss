@@ -236,6 +236,7 @@ main{
         font-size: 1.4em;
         color: $blanco;
         text-align: right;
+        letter-spacing: 1px;
 
     }
 }
@@ -600,7 +601,7 @@ main{
     //height: 120vh;
     display: flex;
     align-items: center;
-    background-image: linear-gradient($violeta, $violeta-oscuro);
+    //background-image: linear-gradient($violeta, $violeta-oscuro);
 
     .titulo{
         color: $negro;
