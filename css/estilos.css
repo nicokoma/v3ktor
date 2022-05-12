@@ -503,6 +503,10 @@ main {
   .cliente div {
     width: 538px;
   }
+
+  .cliente a {
+    margin: 100px 205px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .cliente div {
@@ -516,8 +520,12 @@ main {
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .cliente div {
-    width: 240px;
-    height: 218px;
+    width: 238px;
+    height: 214px;
+  }
+
+  .cliente a {
+    margin: 80px 60px;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 1399px) {
@@ -532,6 +540,7 @@ main {
 .servicios-2, .servicios {
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
 }
 .servicios-2 .titulo, .servicios .titulo {
   color: #000;
@@ -551,7 +560,7 @@ main {
   box-sizing: border-box;
   margin: 0 20px;
   text-align: center;
-  height: 450px;
+  height: 410px;
   background: none;
 }
 .servicios-2 .hijo:hover, .servicios .hijo:hover {

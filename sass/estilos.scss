@@ -546,6 +546,10 @@ main{
         width: 538px;
 
     }
+
+    .cliente a{
+        margin: 100px 205px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -561,8 +565,12 @@ main{
 
 @media screen and (min-width: 992px) and (max-width: 1200px){
     .cliente div{
-        width: 240px;
-        height: 218px;
+        width: 238px;
+        height: 214px;
+    }
+
+    .cliente a{
+        margin: 80px 60px;
     }
 }
 
@@ -595,6 +603,7 @@ main{
     //height: 120vh;
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
     //background-image: linear-gradient($violeta, $violeta-oscuro);
 
     .titulo{
@@ -619,7 +628,7 @@ main{
         box-sizing: border-box;
         margin: 0 20px;
         text-align: center;
-        height: 450px;
+        height: 410px;
         background: none;
 
         &:hover{
