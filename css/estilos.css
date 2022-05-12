@@ -496,7 +496,7 @@ main {
   }
 
   .cliente a {
-    margin: 120px;
+    margin: 125px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -814,8 +814,12 @@ main {
     position: static;
   }
 
+  main {
+    margin-bottom: 40px;
+  }
+
   .home-left {
-    height: 70vh;
+    height: 50vh;
   }
   .home-left h1 {
     font-size: 3em;
@@ -831,12 +835,7 @@ main {
   }
 
   .home-right {
-    display: flex;
-    background-image: radial-gradient(#67d6ea, #12abca);
-    height: 30vh;
-    align-items: center;
-    background-image: url(../assets/img_index.jpg);
-    background-size: cover;
+    height: 45vh;
   }
   .home-right h1 {
     font-size: 6em;
@@ -875,16 +874,17 @@ main {
     animation: fadeIn;
     animation-duration: 1s;
     height: 100%;
+    margin-bottom: 40px;
   }
   .quienes-home .home-right-quienes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    height: 100vh;
+    height: 65vh;
   }
   .quienes-home .home-right-quienes h1 {
-    font-size: 3em;
+    font-size: 30px;
     font-family: "outfit-bold";
     color: #000;
     text-align: right;
@@ -961,10 +961,8 @@ main {
   }
   .portfolio-home .titulo {
     display: flex;
-    grid-column: 2;
-    grid-row: 1;
     align-self: flex-start;
-    margin-top: 10px;
+    font-size: 30px;
   }
   .portfolio-home .trabajos {
     display: flex;
