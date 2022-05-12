@@ -859,6 +859,7 @@ main {
     display: flex;
     animation: fadeIn;
     animation-duration: 1s;
+    height: 100%;
   }
   .quienes-home .home-right-quienes {
     display: flex;
