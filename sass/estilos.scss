@@ -445,7 +445,7 @@ main{
         grid-row: 5;
         grid-column: 1/10;
         font-size: 1.5em;
-        color: #777;
+        color: $blanco;
         line-height: 100px;
         opacity: .4;
         //margin-left: 40px;
@@ -552,6 +552,10 @@ main{
     .cliente div{
         width: 178px;
         height: 155px;
+    }
+
+    .cliente a{
+        margin: 29% 31px;
     }
 }
 
@@ -1500,10 +1504,34 @@ $colores-servicios: (
 }
 
 
-/*TABLET*/
+////////// TABLET ///////////
 @media screen and (min-width: 601px) and (max-width: 1024px){
-    .menu-v3ktor{
-        position: static;
+    .home-left{
+
+        
+    
+        h1{
+            font-size: 3.5em;
+
+        }
+
+    }
+    
+    .home-right{
+        display: flex;
+        //background-color: $celeste;
+        background-image: radial-gradient($celeste,$celeste-oscuro );
+        height: $h-100-v3ktor;
+        align-items: center;
+        background-image: url(../assets/img_index.jpg);
+        background-size: cover;
+    
+        h1{
+            font-size: 6em;
+            font-family: $tipografia-v3ktor-bold;
+            text-transform: uppercase;
+            color: $blanco;
+        }
     }
 }
 
