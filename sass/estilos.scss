@@ -496,7 +496,7 @@ main{
         position: absolute;
         width: 330px;
         height: 250px;
-        background-color: $celeste-oscuro;
+        background-color: $violeta-oscuro;
         color: $blanco;
         text-decoration: none;
         margin-left: -12px;
@@ -543,19 +543,22 @@ main{
 
 @media screen and (min-width: 576px) and (max-width: 767px){
     .cliente div{
-        width: 180px;
+        width: 538px;
+
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
     .cliente div{
-        width: 180px;
+        width: 178px;
+        height: 155px;
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px){
     .cliente div{
         width: 240px;
+        height: 218px;
     }
 }
 
