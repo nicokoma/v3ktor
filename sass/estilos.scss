@@ -559,8 +559,13 @@ main{
     }
 
     .cliente a{
-        margin: 29% 31px;
+        margin: 34% 26%;
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+        padding: 6px 0;
     }
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px){
@@ -577,6 +582,10 @@ main{
 @media screen and (min-width: 1201px) and (max-width: 1399px){
     .cliente div{
         width: 285px;
+    }
+
+    .cliente a{
+        margin: 35% 29%;
     }
 }
 
@@ -1539,6 +1548,22 @@ $colores-servicios: (
         }
     }
 }
+
+
+
+//MOBILE HORIZONTAL
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .quienes-home{
+        height: 100% ;
+    }
+
+    .descripcion-home{
+        height: 100%;
+        display: block;
+    }
+}
+
 
 
 
