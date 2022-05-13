@@ -265,121 +265,63 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  background-image: radial-gradient(#ccaacf, #aa82ad);
-  height: 100vh;
 }
 .home-left h1 {
   font-size: 5em;
   font-family: "outfit-bold";
   text-transform: uppercase;
-  color: #FFF;
   text-align: right;
 }
 .home-left .texto {
   font-size: 1.4em;
-  color: #FFF;
   text-align: right;
   letter-spacing: 1px;
 }
 
 .home-right {
   display: flex;
-  background-image: radial-gradient(#67d6ea, #12abca);
-  height: 100vh;
-  align-items: center;
-  background-image: url(../assets/img_index.jpg);
-  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 .home-right h1 {
-  font-size: 6em;
+  font-size: 5em;
   font-family: "outfit-bold";
   text-transform: uppercase;
+  text-align: left;
+}
+.home-right .texto {
+  font-size: 1.4em;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.inicio-home {
+  background-image: radial-gradient(#ccaacf, #aa82ad);
+  color: #FFF;
+  height: 100vh;
+}
+.inicio-home h1 {
   color: #FFF;
 }
 
-.principal {
-  display: flex;
-  height: 100vh;
-  justify-items: center;
-  animation: fadeIn;
-  animation-duration: 1s;
-}
-.principal .logo {
-  display: flex;
-  grid-column: 2;
-  grid-row: 4;
-  animation-name: opacidad;
-  animation-play-state: running;
-  animation-timing-function: ease-in;
-  animation-duration: 300ms;
-  animation-delay: 600ms;
-}
-.principal .titulo {
-  display: flex;
-  grid-column: 2;
-  grid-row: 3/4;
-  animation: flash;
-  animation-duration: 200ms;
-  animation-delay: 1s;
-  font-size: 5em;
-  font-family: "outfit-bold";
-  letter-spacing: -2px;
-}
-.principal .texto {
-  display: flex;
-  grid-column: 2;
-  grid-row: 4;
-  font-size: 1.5em;
-  text-align: center;
-}
-.principal .boton, .principal .cliente a, .cliente .principal a {
-  display: flex;
-  grid-column: 2;
-  grid-row: 5;
+.inicio-home-2 {
+  background-image: url(../assets/img_index.jpg);
+  background-size: cover;
 }
 
-@keyframes opacidad {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 1;
-  }
+.nosotros-home {
+  background-image: url(../assets/img_quienes.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
+
 .quienes-home {
   height: 100vh;
   display: flex;
   animation: fadeIn;
   animation-duration: 1s;
-}
-.quienes-home .home-right-quienes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  height: 100vh;
-}
-.quienes-home .home-right-quienes h1 {
-  font-size: 3em;
-  font-family: "outfit-bold";
-  color: #000;
-  text-align: right;
-}
-.quienes-home .home-right-quienes .texto {
-  font-size: 1.2em;
-  color: #000;
-  text-align: right;
-  letter-spacing: 1px;
-  line-height: 30px;
-}
-.quienes-home .home-left-quienes {
-  display: flex;
-  background-image: radial-gradient(#67d6ea, #12abca);
-  height: 100vh;
-  align-items: center;
-  background-image: url(../assets/img_quienes.jpg);
-  background-size: cover;
-  background-position: center;
 }
 .quienes-home .cerrar {
   margin-top: 0;
@@ -669,8 +611,18 @@ main {
 
 /******FIN HOME********/
 /******NOSOTROS********/
-.quienes-home .imagen-nosotros {
-  width: 500px;
+.home-left-nosotros {
+  display: flex;
+  background-image: url(../assets/img_diseno.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.home-right-nosotros {
+  display: flex;
+  background-image: url(../assets/img_desarrollo.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 /***PORTFOLIO***/
@@ -902,7 +854,7 @@ main {
     color: #000;
     text-align: right;
     letter-spacing: 1px;
-    line-height: 30px;
+    line-height: 26px;
   }
   .quienes-home .home-left-quienes {
     display: flex;

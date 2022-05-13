@@ -218,154 +218,93 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;    
-    background-image: radial-gradient($violeta,$violeta-oscuro);
-    height: $h-100-v3ktor;
-    
+    align-items: flex-end;
 
     h1{
         font-size: 5em;
         font-family: $tipografia-v3ktor-bold;
         text-transform: uppercase;
-        color: $blanco;
         text-align: right;
-        //text-shadow: 0px 0px 10px black;
+
     }
 
     .texto{
         font-size: 1.4em;
-        color: $blanco;
         text-align: right;
         letter-spacing: 1px;
 
     }
 }
 
+
 .home-right{
     display: flex;
-    //background-color: $celeste;
-    background-image: radial-gradient($celeste,$celeste-oscuro );
-    height: $h-100-v3ktor;
-    align-items: center;
-    background-image: url(../assets/img_index.jpg);
-    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 
     h1{
-        font-size: 6em;
+        font-size: 5em;
         font-family: $tipografia-v3ktor-bold;
         text-transform: uppercase;
-        color: $blanco;
-    }
-}
-
-
-
-.principal{
-    display: flex;
-    height: 100vh;
-    justify-items: center;
-    //background-image: url(../assets/img_index.jpg);
-    //background-size: cover;
-    animation: fadeIn;
-    animation-duration: 1s;
-
-    .logo{
-        display: flex;
-        grid-column: 2;
-        grid-row: 4;
-        animation-name: opacidad;
-        animation-play-state:running;
-        animation-timing-function: ease-in;
-        animation-duration: 300ms;
-        animation-delay: 600ms;
-    
-        
-    }
-
-    .titulo{
-        display: flex;
-        grid-column: 2;
-        grid-row: 3/4;
-        animation: flash;
-        animation-duration: 200ms;
-        animation-delay: 1s;
-        font-size: 5em;
-        font-family:$tipografia-v3ktor-bold;
-        letter-spacing: -2px;
-    
+        text-align: left;
     }
 
     .texto{
-        display: flex;
-        grid-column: 2;
-        grid-row: 4;
-        font-size: 1.5em;
-        text-align: center;
+        font-size: 1.4em;
+        text-align: left;
+        letter-spacing: 1px;
+
     }
 
-    .boton{
-        display: flex;
-        grid-column: 2;
-        grid-row: 5;
-    }
-    
 }
 
 
-    @keyframes opacidad {
-        from {
-        opacity: .5;
-        }
-        to {
-        opacity: 1;
-        }
+
+.inicio-home{
+    background-image: radial-gradient($violeta,$violeta-oscuro);
+    color: $blanco;
+    height: $h-100-v3ktor;
+
+    h1{
+        color: $blanco;
+    }
     }
 
+.inicio-home-2{
+    background-image: url(../assets/img_index.jpg);
+    background-size: cover;
+}
+
+
+
+    
 
 //QUIENES SOMOS
+
+
+.nosotros-home{
+    background-image: url(../assets/img_quienes.jpg);
+    background-size: cover;
+    background-position: center;
+    height: $h-100-v3ktor;
+}
+
+.nosotros-home-2{
+
+}
+
+
+
+
+
+
 .quienes-home{
     height: 100vh;
     display: flex;
     animation: fadeIn;
     animation-duration: 1s;
 
-    .home-right-quienes{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;    
-        height: $h-100-v3ktor;
-        
-    
-        h1{
-            font-size: 3em;
-            font-family: $tipografia-v3ktor-bold;
-            color: $negro;
-            text-align: right;
-            //text-shadow: 0px 0px 10px black;
-        }
-    
-        .texto{
-            font-size: 1.2em;
-            color: $negro;
-            text-align: right;
-            letter-spacing: 1px;
-            line-height: 30px;
-    
-        }
-    }
-    
-    .home-left-quienes{
-        display: flex;
-        //background-color: $celeste;
-        background-image: radial-gradient($celeste,$celeste-oscuro );
-        height: $h-100-v3ktor;
-        align-items: center;
-        background-image: url(../assets/img_quienes.jpg);
-        background-size: cover;
-        background-position: center;
-    
-    }
 
     .cerrar{
         margin-top: 0;
@@ -778,9 +717,24 @@ main{
 
 /******NOSOTROS********/
 
-.quienes-home .imagen-nosotros{
-    width: 500px;
+.home-left-nosotros{
+    display: flex;
+    background-image: url(../assets/img_diseno.jpg);
+    background-position: center;
+    background-size: cover;
 }
+
+
+.home-right-nosotros{
+    display: flex;
+    background-image: url(../assets/img_desarrollo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
 
 
 
@@ -1098,7 +1052,7 @@ $colores-servicios: (
                 color: $negro;
                 text-align: right;
                 letter-spacing: 1px;
-                line-height: 30px;
+                line-height: 26px;
         
             }
         }
