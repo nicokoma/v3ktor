@@ -517,17 +517,19 @@ main {
   box-sizing: border-box;
   transition-duration: 600ms;
   cursor: pointer;
-  background: none;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background: black;
 }
 .servicios-2 .hijo:hover .texto, .servicios .hijo:hover .texto {
-  color: #000;
+  color: #FFF;
 }
 .servicios-2 .hijo:hover .titulo-servicio, .servicios .hijo:hover .titulo-servicio {
-  color: #000;
+  color: #FFF;
 }
 .servicios-2 .hijo:hover .icon-serv, .servicios .hijo:hover .icon-serv {
-  color: #000;
+  color: #FFF;
+}
+.servicios-2 .hijo:hover a, .servicios .hijo:hover a {
+  border: 1px solid #FFF;
 }
 .servicios-2 .hijo:hover a:hover, .servicios .hijo:hover a:hover {
   background: #FFF;
