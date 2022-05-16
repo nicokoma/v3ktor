@@ -265,7 +265,6 @@ main{
         font-family: $tipografia-v3ktor-bold;
         text-transform: uppercase;
         text-align: left;
-        color: $negro;
         opacity: 1;
     }
 
@@ -312,14 +311,14 @@ main{
 .nosotros-home-2{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     background: white;
     color: $negro;
 
     .titulo{
         margin-top: 10px;
         color: $negro;
-        font-size: 2em;
+        font-size: 5em;
     }
     /*background-image: url(../assets/img_desarrollo.jpg);
     background-size: cover;
@@ -1019,7 +1018,7 @@ $colores-servicios: (
 
 /********MEDIA QUERIES*********/
 
-/*MOBILE*/
+////////////HOME MOBILE///////////
 @media screen and (max-width: 600px){
 
     .encabezado {
@@ -1067,9 +1066,7 @@ $colores-servicios: (
         font-size: 3em;
         font-family: $tipografia-v3ktor-bold;
         text-transform: uppercase;
-        color: $blanco;
         text-align: right;
-        //text-shadow: 0px 0px 10px black;
     }
 
     .texto{
@@ -1085,7 +1082,7 @@ $colores-servicios: (
         font-size: 3em;
         font-family: $tipografia-v3ktor-bold;
         text-transform: uppercase;
-        color: $blanco;
+
     }
 
     .texto{
@@ -1095,40 +1092,12 @@ $colores-servicios: (
 }
 
 
+.nosotros-home-2{
 
-
-
-    .principal{
-        display: grid;
-        grid-template-columns: 5% 1fr 5%;
-        grid-template-rows: repeat(8,1fr);
-        height: 100vh;
-        justify-items: center;
-        background-image: url(../assets/img_index.jpg);
-        background-size: cover;
-        background-position: top;
-
-        .logo{
-            width: 300px;
-            display: flex;
-            grid-column: 2;
-            grid-row: 4;
-            
-        }
-
-        .titulo{
-            display: flex;
-            font-size: 40px;
-            text-align: center;
-        }
-
-
-        .texto{
-            font-size: 14px;
-        }
-    
+    .titulo{
+    font-size: 2.4em;
     }
-    
+}
 
 
 
@@ -1136,16 +1105,18 @@ $colores-servicios: (
 
 
 
-
-
-    //NOSOTROS MOBILE
+/////////NOSOTROS MOBILE///////////
     
 
 .header-nosotros{
     height: 100vh;
 }
 
-//.nosotros-seccion{}
+.nosotros-seccion{
+    .titulo{
+        font-size: 6em;
+    }
+}
 
 
 .nosotros-seccion-2{
@@ -1153,8 +1124,8 @@ $colores-servicios: (
     flex-direction: column;
     justify-content: start;
 
-    .titulo h1{
-        font-size: 1em;
+    h1{
+        font-size: 1em !important;
         color: $negro !important;
     }
 
@@ -1169,6 +1140,7 @@ $colores-servicios: (
     display: flex;
     flex-direction: column;
     justify-content: start;
+
     .texto{
         margin-top: 10px;
         font-size: 18px;

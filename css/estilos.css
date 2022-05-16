@@ -300,7 +300,6 @@ main {
   font-family: "outfit-bold";
   text-transform: uppercase;
   text-align: left;
-  color: #000;
   opacity: 1;
 }
 .home-right .texto {
@@ -331,7 +330,7 @@ main {
 .nosotros-home-2 {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   background: white;
   color: #000;
   /*background-image: url(../assets/img_desarrollo.jpg);
@@ -341,7 +340,7 @@ main {
 .nosotros-home-2 .titulo {
   margin-top: 10px;
   color: #000;
-  font-size: 2em;
+  font-size: 5em;
 }
 
 .header-nosotros {
@@ -830,7 +829,6 @@ h1 {
 }
 
 /********MEDIA QUERIES*********/
-/*MOBILE*/
 @media screen and (max-width: 600px) {
   .encabezado .navbar-v3ktor {
     display: grid;
@@ -865,7 +863,6 @@ h1 {
     font-size: 3em;
     font-family: "outfit-bold";
     text-transform: uppercase;
-    color: #FFF;
     text-align: right;
   }
   .home-left .texto {
@@ -880,40 +877,22 @@ h1 {
     font-size: 3em;
     font-family: "outfit-bold";
     text-transform: uppercase;
-    color: #FFF;
   }
   .home-right .texto {
     font-size: 1em;
     text-align: left;
   }
 
-  .principal {
-    display: grid;
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: repeat(8, 1fr);
-    height: 100vh;
-    justify-items: center;
-    background-image: url(../assets/img_index.jpg);
-    background-size: cover;
-    background-position: top;
-  }
-  .principal .logo {
-    width: 300px;
-    display: flex;
-    grid-column: 2;
-    grid-row: 4;
-  }
-  .principal .titulo {
-    display: flex;
-    font-size: 40px;
-    text-align: center;
-  }
-  .principal .texto {
-    font-size: 14px;
+  .nosotros-home-2 .titulo {
+    font-size: 2.4em;
   }
 
   .header-nosotros {
     height: 100vh;
+  }
+
+  .nosotros-seccion .titulo {
+    font-size: 6em;
   }
 
   .nosotros-seccion-2 {
@@ -921,8 +900,8 @@ h1 {
     flex-direction: column;
     justify-content: start;
   }
-  .nosotros-seccion-2 .titulo h1 {
-    font-size: 1em;
+  .nosotros-seccion-2 h1 {
+    font-size: 1em !important;
     color: #000 !important;
   }
   .nosotros-seccion-2 .texto {
