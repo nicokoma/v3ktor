@@ -237,7 +237,7 @@ main{
     height: 100vh;
 
     h1{
-        font-size: 7em;
+        font-size: 5em;
         font-family: $tipografia-v3ktor-bold;
         text-transform: uppercase;
         text-align: right;
@@ -261,10 +261,12 @@ main{
     height: 100vh;
 
     h1{
-        font-size: 7em;
+        font-size: 5em;
         font-family: $tipografia-v3ktor-bold;
         text-transform: uppercase;
         text-align: left;
+        color: $negro;
+        opacity: 1;
     }
 
     .texto{
@@ -308,8 +310,17 @@ main{
 }
 
 .nosotros-home-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     background: white;
     color: $negro;
+
+    .titulo{
+        margin-top: 10px;
+        color: $negro;
+        font-size: 2em;
+    }
     /*background-image: url(../assets/img_desarrollo.jpg);
     background-size: cover;
     background-position: center;*/
@@ -1046,9 +1057,7 @@ $colores-servicios: (
     }
 
 
-    main{
-        margin-bottom: 40px;
-    }
+
 
     
 .home-left{
@@ -1065,9 +1074,7 @@ $colores-servicios: (
 
     .texto{
         font-size: 1em;
-        color: $blanco;
         text-align: right;
-
     }
 }
 
@@ -1075,10 +1082,15 @@ $colores-servicios: (
     height: 50vh;
 
     h1{
-        font-size: 6em;
+        font-size: 3em;
         font-family: $tipografia-v3ktor-bold;
         text-transform: uppercase;
         color: $blanco;
+    }
+
+    .texto{
+        font-size: 1em;
+        text-align: left;
     }
 }
 
@@ -1118,78 +1130,77 @@ $colores-servicios: (
     }
     
 
+
+
+
+
+
+
+
+
     //NOSOTROS MOBILE
     
-    .quienes-home{
-        display: flex;
-        animation: fadeIn;
-        animation-duration: 1s;
-        height: 100%;
-        margin-bottom: 40px;
-    
-        .home-right-quienes{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;    
-            height: 65vh;
-            
-        
-            h1{
-                font-size: 30px;
-                font-family: $tipografia-v3ktor-bold;
-                color: $negro;
-                text-align: right;
-                //text-shadow: 0px 0px 10px black;
-            }
-        
-            .texto{
-                font-size: 1.2em;
-                color: $negro;
-                text-align: right;
-                letter-spacing: 1px;
-                line-height: 26px;
-        
-            }
-        }
-        
-        .home-left-quienes{
-            display: flex;
-            //background-color: $celeste;
-            background-image: radial-gradient($celeste,$celeste-oscuro );
-            height: 30vh;
-            align-items: center;
-            background-image: url(../assets/img_quienes.jpg);
-            background-size: cover;
-            background-position: center;
-        
-        }
-    
-        .cerrar{
-            margin-top: 0;
-            padding: 8px;
-            width: 40px;
-            height: 40px;
-            //Variable Local
-            $borde-redondeado:20px;
-            border-radius: $borde-redondeado;
-        }
-        
-        
-    }
-    
-
-
-
-
 
 .header-nosotros{
     height: 100vh;
 }
 
-.nosotros-seccion{
-    font-size: 4.5em;
+//.nosotros-seccion{}
+
+
+.nosotros-seccion-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    .titulo h1{
+        font-size: 1em;
+        color: $negro !important;
+    }
+
+    .texto{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    
 }
+
+.nosotros-seccion-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    .texto{
+        margin-top: 10px;
+        font-size: 18px;
+    } 
+}
+
+
+.nosotros-seccion-4{
+    display: flex;
+    word-break: break-all;
+
+    h1{
+        font-size: 7em;
+        opacity: .7;
+        line-height: 79px;
+    }
+
+}
+
+.desarrollo{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+
+
+
+
+
+
+
 
 
 //DESCRIPCION MOBILE
