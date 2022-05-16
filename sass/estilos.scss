@@ -234,9 +234,10 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    height: 100vh;
 
     h1{
-        font-size: 5em;
+        font-size: 4em;
         font-family: $tipografia-v3ktor-bold;
         text-transform: uppercase;
         text-align: right;
@@ -257,9 +258,10 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    height: 100vh;
 
     h1{
-        font-size: 5em;
+        font-size: 4em;
         font-family: $tipografia-v3ktor-bold;
         text-transform: uppercase;
         text-align: left;
@@ -279,7 +281,7 @@ main{
 .inicio-home{
     background-image: radial-gradient($violeta,$violeta-oscuro);
     color: $blanco;
-    height: $h-100-v3ktor;
+
 
     h1{
         color: $blanco;
@@ -295,20 +297,79 @@ main{
 
     
 
-//QUIENES SOMOS
 
 
 .nosotros-home{
     background-image: url(../assets/img_quienes.jpg);
     background-size: cover;
     background-position: center;
-    height: $h-100-v3ktor;
+
+
 }
 
-//.nosotros-home-2{}
+.nosotros-home-2{
+    background: white;
+    color: $negro;
+    /*background-image: url(../assets/img_desarrollo.jpg);
+    background-size: cover;
+    background-position: center;*/
+
+
+}
 
 
 
+
+//NOSOTROS
+
+.header-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40vh;
+
+    h1{
+        font-size: 4em;
+        text-transform: uppercase;
+        font-family: $tipografia-v3ktor-bold;
+    }
+}
+
+
+.nosotros-seccion{
+    background-image: url(../assets/img_diseno.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nosotros-seccion-2{
+    background: white;
+    color: $negro;
+    background-image: radial-gradient($violeta,$violeta-oscuro);
+    color: $blanco;
+
+    h1{
+        color: $blanco;
+    }
+}
+
+.nosotros-seccion-3{
+    background: white;
+    color: $negro;
+    background-image: radial-gradient($celeste,$celeste-oscuro);
+    color: $blanco;
+        
+    h1{
+        color: $blanco;
+    }
+}
+
+
+.nosotros-seccion-4{
+    background-image: url(../assets/img_desarrollo.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
 
 
@@ -331,6 +392,11 @@ main{
     
     
 }
+
+
+
+
+
 
 
 

@@ -274,9 +274,10 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  height: 100vh;
 }
 .home-left h1 {
-  font-size: 5em;
+  font-size: 4em;
   font-family: "outfit-bold";
   text-transform: uppercase;
   text-align: right;
@@ -292,9 +293,10 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  height: 100vh;
 }
 .home-right h1 {
-  font-size: 5em;
+  font-size: 4em;
   font-family: "outfit-bold";
   text-transform: uppercase;
   text-align: left;
@@ -308,7 +310,6 @@ main {
 .inicio-home {
   background-image: radial-gradient(#ccaacf, #aa82ad);
   color: #FFF;
-  height: 100vh;
 }
 .inicio-home h1 {
   color: #FFF;
@@ -323,7 +324,58 @@ main {
   background-image: url(../assets/img_quienes.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+}
+
+.nosotros-home-2 {
+  background: white;
+  color: #000;
+  /*background-image: url(../assets/img_desarrollo.jpg);
+  background-size: cover;
+  background-position: center;*/
+}
+
+.header-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+}
+.header-nosotros h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: "outfit-bold";
+}
+
+.nosotros-seccion {
+  background-image: url(../assets/img_diseno.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.nosotros-seccion-2 {
+  background: white;
+  color: #000;
+  background-image: radial-gradient(#ccaacf, #aa82ad);
+  color: #FFF;
+}
+.nosotros-seccion-2 h1 {
+  color: #FFF;
+}
+
+.nosotros-seccion-3 {
+  background: white;
+  color: #000;
+  background-image: radial-gradient(#67d6ea, #12abca);
+  color: #FFF;
+}
+.nosotros-seccion-3 h1 {
+  color: #FFF;
+}
+
+.nosotros-seccion-4 {
+  background-image: url(../assets/img_desarrollo.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .quienes-home {
