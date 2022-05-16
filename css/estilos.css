@@ -277,7 +277,7 @@ main {
   height: 100vh;
 }
 .home-left h1 {
-  font-size: 4em;
+  font-size: 7em;
   font-family: "outfit-bold";
   text-transform: uppercase;
   text-align: right;
@@ -296,7 +296,7 @@ main {
   height: 100vh;
 }
 .home-right h1 {
-  font-size: 4em;
+  font-size: 7em;
   font-family: "outfit-bold";
   text-transform: uppercase;
   text-align: left;
@@ -344,12 +344,18 @@ main {
   font-size: 4em;
   text-transform: uppercase;
   font-family: "outfit-bold";
+  color: #000;
+  opacity: 1;
 }
 
 .nosotros-seccion {
   background-image: url(../assets/img_diseno.jpg);
   background-size: cover;
   background-position: center;
+}
+.nosotros-seccion h1 {
+  color: #FFF;
+  opacity: 0.7;
 }
 
 .nosotros-seccion-2 {
@@ -376,6 +382,11 @@ main {
   background-image: url(../assets/img_desarrollo.jpg);
   background-size: cover;
   background-position: center;
+}
+
+h1 {
+  color: #FFF;
+  opacity: 0.7;
 }
 
 .quienes-home {
@@ -858,7 +869,7 @@ main {
   }
 
   .home-right {
-    height: 45vh;
+    height: 50vh;
   }
   .home-right h1 {
     font-size: 6em;
@@ -934,6 +945,14 @@ main {
     width: 40px;
     height: 40px;
     border-radius: 20px;
+  }
+
+  .header-nosotros {
+    height: 100vh;
+  }
+
+  .nosotros-seccion {
+    font-size: 4.5em;
   }
 
   .descripcion-home {

@@ -237,7 +237,7 @@ main{
     height: 100vh;
 
     h1{
-        font-size: 4em;
+        font-size: 7em;
         font-family: $tipografia-v3ktor-bold;
         text-transform: uppercase;
         text-align: right;
@@ -261,7 +261,7 @@ main{
     height: 100vh;
 
     h1{
-        font-size: 4em;
+        font-size: 7em;
         font-family: $tipografia-v3ktor-bold;
         text-transform: uppercase;
         text-align: left;
@@ -332,6 +332,9 @@ main{
         font-size: 4em;
         text-transform: uppercase;
         font-family: $tipografia-v3ktor-bold;
+        color: $negro;
+        opacity: 1;
+        
     }
 }
 
@@ -340,6 +343,11 @@ main{
     background-image: url(../assets/img_diseno.jpg);
     background-size: cover;
     background-position: center;
+
+    h1{
+        color: $blanco;
+        opacity: .7;
+    }
 }
 
 .nosotros-seccion-2{
@@ -371,6 +379,10 @@ main{
     background-position: center;
 }
 
+    h1{
+        color: $blanco;
+        opacity: .7;
+    }
 
 
 .quienes-home{
@@ -1060,7 +1072,7 @@ $colores-servicios: (
 }
 
 .home-right{
-    height: 45vh;
+    height: 50vh;
 
     h1{
         font-size: 6em;
@@ -1106,7 +1118,8 @@ $colores-servicios: (
     }
     
 
-
+    //NOSOTROS MOBILE
+    
     .quienes-home{
         display: flex;
         animation: fadeIn;
@@ -1167,7 +1180,19 @@ $colores-servicios: (
     
 
 
-//DESCRIPCION
+
+
+
+.header-nosotros{
+    height: 100vh;
+}
+
+.nosotros-seccion{
+    font-size: 4.5em;
+}
+
+
+//DESCRIPCION MOBILE
 .descripcion-home{
     display: grid;
     grid-template-columns: 5% 1fr 5%;
