@@ -423,7 +423,9 @@ main{
 
 
 
-//DESCRIPCION
+
+
+/////////DESCRIPCION HOME/////////
 .descripcion-home{
     font-family: $tipografia-v3ktor-bold;
     display: grid;
@@ -494,7 +496,7 @@ main{
 
 
 
-//PORTFOLIO
+//////////////PORTFOLIO///////////////
 .portfolio-home{
     background-color: $blanco;
     margin-bottom: 50px;
@@ -628,12 +630,8 @@ main{
         margin: 35% 29%;
     }
 }
-
-
-
-
-
 //FIN HOVER PORTFOLIO
+
 
 
 
@@ -845,44 +843,33 @@ main{
 
 /***PORTFOLIO***/
 
-.principal-portfolio{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(5,1fr);
-    justify-content: center;
-    align-items: center;
-    animation: fadeIn;
-    animation-duration: 1s;
 
+.portfolio-seccion{
+    background-image: url(../assets/img_portfolio.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio-seccion-2{
+    background-image: linear-gradient($violeta, $violeta-oscuro);
+    color: $blanco;    
     .titulo{
-        display: flex;
-        grid-column: 6/8;
-        grid-row: 2;
-        font-size: 40px;
-        font-weight: 800;
-        justify-content: center;
-        margin-bottom: 20px;
-        
+        color: $blanco;
+    }
+}
+
+
+.item-portfolio{
+    text-align: center;
+    h1{
+        color: $negro;
+        opacity: 1;
+        font-family: $tipografia-v3ktor-bold;
     }
 
-    .trabajos{
-        display: flex;
-        flex-wrap: wrap;
-        grid-column: 2/12;
-        grid-row: 3;
-        justify-content: center;
-    
+    h2{
+        font-size: 1em;
     }
-
-    .trabajo_hijo{
-        margin: 3px 5px;
-    }
-    
-    .img-serv{
-        width:100px;
-    }
-    
 
 }
 

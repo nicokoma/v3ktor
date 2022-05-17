@@ -709,37 +709,30 @@ h1 {
 }
 
 /***PORTFOLIO***/
-.principal-portfolio {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  justify-content: center;
-  align-items: center;
-  animation: fadeIn;
-  animation-duration: 1s;
+.portfolio-seccion {
+  background-image: url(../assets/img_portfolio.jpg);
+  background-size: cover;
+  background-position: center;
 }
-.principal-portfolio .titulo {
-  display: flex;
-  grid-column: 6/8;
-  grid-row: 2;
-  font-size: 40px;
-  font-weight: 800;
-  justify-content: center;
-  margin-bottom: 20px;
+
+.portfolio-seccion-2 {
+  background-image: linear-gradient(#ccaacf, #aa82ad);
+  color: #FFF;
 }
-.principal-portfolio .trabajos {
-  display: flex;
-  flex-wrap: wrap;
-  grid-column: 2/12;
-  grid-row: 3;
-  justify-content: center;
+.portfolio-seccion-2 .titulo {
+  color: #FFF;
 }
-.principal-portfolio .trabajo_hijo {
-  margin: 3px 5px;
+
+.item-portfolio {
+  text-align: center;
 }
-.principal-portfolio .img-serv {
-  width: 100px;
+.item-portfolio h1 {
+  color: #000;
+  opacity: 1;
+  font-family: "outfit-bold";
+}
+.item-portfolio h2 {
+  font-size: 1em;
 }
 
 .carousel {
