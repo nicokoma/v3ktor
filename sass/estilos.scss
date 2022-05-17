@@ -861,6 +861,7 @@ main{
 
 .item-portfolio{
     text-align: center;
+    margin-bottom: 50px;
     h1{
         color: $negro;
         opacity: 1;
@@ -869,6 +870,15 @@ main{
 
     h2{
         font-size: 1em;
+    }
+
+    .item-hijo{
+        &:hover{
+            opacity: .5;
+            cursor: pointer;
+            animation-duration: 1s;
+            
+        }
     }
 
 }
