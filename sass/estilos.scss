@@ -927,12 +927,21 @@ margin-top: 60px;
 
 .boton{
     border: 1px solid $negro;
+
+    &:hover{
+        border: 1px solid $negro;
+        background-color: white;
+        color: $negro;
+
+    }
 }
 
 .hijo{
     &:hover{
-        background: none;
+        background: #e9e9e9;
         color: $negro;
+
+
 
         .titulo-servicio{
             color: $negro;
@@ -944,10 +953,6 @@ margin-top: 60px;
 
         .texto{
             color: $negro;
-        }
-
-        .boton{
-            border: 1px solid $negro;
         }
         
     }
