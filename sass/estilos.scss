@@ -674,7 +674,7 @@ main{
         box-sizing: border-box;
         margin: 0 20px;
         text-align: center;
-        height: 350px;
+        height: 400px;
         background: none;
 
         &:hover{
@@ -892,38 +892,61 @@ main{
 
 
 
-/***SERVICIOS***/
+////////////////SERVICIOS//////////////////
 
 .servicios{
+    display: flex;
+}
+
+.servicios-seccion-1{
+    background-image: url(../assets/img_servicios.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.servicios-seccion-2{
+background-image: radial-gradient($celeste, $celeste-oscuro);
+padding-left: 30px;
+
+
+    .titulo{
+        color: $blanco;
+    }
+
+    .texto{
+        color: $blanco;
+    }
+
+}
+
+
+.servicios-seccion-3{
 @extend .servicios-2;
-margin-top: 40px;
-height: 80vh;
-
-    
-}
-
-.servicio_hijo h2{
-    font-size: 25px !important;
-    justify-content: start !important;
-
-}
-
-
-//MAPS
-$colores-servicios: (
-    'primero': rgb(255, 255, 255),
-    'segundo': rgb(0, 0, 0),
-    'tercero': rgb(0, 0, 0),
-
-);
+margin-top: 60px;
 
 .hijo{
-    background-color: map-get($map: $colores-servicios, $key: 'primero' );
-    color: map-get($map: $colores-servicios, $key: 'segundo' );
-    .icon-serv{
-        color:map-get($map: $colores-servicios, $key: 'tercero' ) ;
-    } 
+    &:hover{
+        background: none;
+        color: $negro;
+
+        .titulo-servicio{
+            color: $negro;
+        }
+
+        .icon-serv{
+            color: $negro;
+        }
+
+        .texto{
+            color: $negro;
+        }
+        
+    }
 }
+}
+
+
 
 
 

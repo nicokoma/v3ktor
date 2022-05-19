@@ -567,51 +567,51 @@ main {
   font-family: 2em;
 }
 
-.servicios-2, .servicios {
+.servicios-2, .servicios-seccion-3 {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
 }
-.servicios-2 .titulo, .servicios .titulo {
+.servicios-2 .titulo, .servicios-seccion-3 .titulo {
   color: #000;
   margin: 40px 0;
   font-size: 3em;
   font-family: "outfit-bold";
 }
-.servicios-2 .texto, .servicios .texto {
+.servicios-2 .texto, .servicios-seccion-3 .texto {
   margin-bottom: 25px;
 }
-.servicios-2 .icon-serv, .servicios .icon-serv {
+.servicios-2 .icon-serv, .servicios-seccion-3 .icon-serv {
   font-size: 9em;
   margin: 20px 0;
   color: #000;
 }
-.servicios-2 .hijo, .servicios .hijo {
+.servicios-2 .hijo, .servicios-seccion-3 .hijo {
   box-sizing: border-box;
   margin: 0 20px;
   text-align: center;
-  height: 350px;
+  height: 400px;
   background: none;
 }
-.servicios-2 .hijo:hover, .servicios .hijo:hover {
+.servicios-2 .hijo:hover, .servicios-seccion-3 .hijo:hover {
   box-sizing: border-box;
   transition-duration: 600ms;
   cursor: pointer;
   background: black;
 }
-.servicios-2 .hijo:hover .texto, .servicios .hijo:hover .texto {
+.servicios-2 .hijo:hover .texto, .servicios-seccion-3 .hijo:hover .texto {
   color: #FFF;
 }
-.servicios-2 .hijo:hover .titulo-servicio, .servicios .hijo:hover .titulo-servicio {
+.servicios-2 .hijo:hover .titulo-servicio, .servicios-seccion-3 .hijo:hover .titulo-servicio {
   color: #FFF;
 }
-.servicios-2 .hijo:hover .icon-serv, .servicios .hijo:hover .icon-serv {
+.servicios-2 .hijo:hover .icon-serv, .servicios-seccion-3 .hijo:hover .icon-serv {
   color: #FFF;
 }
-.servicios-2 .hijo:hover a, .servicios .hijo:hover a {
+.servicios-2 .hijo:hover a, .servicios-seccion-3 .hijo:hover a {
   border: 1px solid #FFF;
 }
-.servicios-2 .hijo:hover a:hover, .servicios .hijo:hover a:hover {
+.servicios-2 .hijo:hover a:hover, .servicios-seccion-3 .hijo:hover a:hover {
   background: #FFF;
   color: #000;
   transition: 400ms;
@@ -748,23 +748,42 @@ main {
   margin-bottom: 10px;
 }
 
-/***SERVICIOS***/
 .servicios {
-  margin-top: 40px;
-  height: 80vh;
+  display: flex;
 }
 
-.servicio_hijo h2 {
-  font-size: 25px !important;
-  justify-content: start !important;
+.servicios-seccion-1 {
+  background-image: url(../assets/img_servicios.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-.hijo {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+.servicios-seccion-2 {
+  background-image: radial-gradient(#67d6ea, #12abca);
+  padding-left: 30px;
 }
-.hijo .icon-serv {
-  color: rgb(0, 0, 0);
+.servicios-seccion-2 .titulo {
+  color: #FFF;
+}
+.servicios-seccion-2 .texto {
+  color: #FFF;
+}
+
+.servicios-seccion-3 {
+  margin-top: 60px;
+}
+.servicios-seccion-3 .hijo:hover {
+  background: none;
+  color: #000;
+}
+.servicios-seccion-3 .hijo:hover .titulo-servicio {
+  color: #000;
+}
+.servicios-seccion-3 .hijo:hover .icon-serv {
+  color: #000;
+}
+.servicios-seccion-3 .hijo:hover .texto {
+  color: #000;
 }
 
 /***CONTACTO***/
@@ -990,10 +1009,10 @@ main {
     margin: 20px 0;
   }
 
-  .servicios-2 .titulo, .servicios .titulo {
+  .servicios-2 .titulo, .servicios-seccion-3 .titulo {
     font-size: 40px;
   }
-  .servicios-2 .hijo, .servicios .hijo {
+  .servicios-2 .hijo, .servicios-seccion-3 .hijo {
     margin: 20px;
     box-sizing: border-box;
     padding: 10px;
