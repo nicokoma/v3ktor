@@ -772,6 +772,9 @@ main {
 .servicios-seccion-3 {
   margin-top: 60px;
 }
+.servicios-seccion-3 .boton, .servicios-seccion-3 .cliente a, .cliente .servicios-seccion-3 a {
+  border: 1px solid #000;
+}
 .servicios-seccion-3 .hijo:hover {
   background: none;
   color: #000;
@@ -784,6 +787,9 @@ main {
 }
 .servicios-seccion-3 .hijo:hover .texto {
   color: #000;
+}
+.servicios-seccion-3 .hijo:hover .boton, .servicios-seccion-3 .hijo:hover .cliente a, .cliente .servicios-seccion-3 .hijo:hover a {
+  border: 1px solid #000;
 }
 
 /***CONTACTO***/

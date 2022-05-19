@@ -925,6 +925,10 @@ padding-left: 30px;
 @extend .servicios-2;
 margin-top: 60px;
 
+.boton{
+    border: 1px solid $negro;
+}
+
 .hijo{
     &:hover{
         background: none;
@@ -940,6 +944,10 @@ margin-top: 60px;
 
         .texto{
             color: $negro;
+        }
+
+        .boton{
+            border: 1px solid $negro;
         }
         
     }
