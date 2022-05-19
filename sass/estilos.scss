@@ -391,7 +391,6 @@ main{
 
     .titulo{
         color: $blanco;
-        opacity: .7;
     }
 
 
@@ -1093,7 +1092,7 @@ $colores-servicios: (
     
 
 .header-nosotros{
-    height: 100vh;
+    height: 75vh;
 }
 
 .nosotros-seccion{
@@ -1115,7 +1114,7 @@ $colores-servicios: (
 
     .texto{
         margin-top: 10px;
-        font-size: 18px;
+        //font-size: 18px;
     }
     
 }
@@ -1127,7 +1126,7 @@ $colores-servicios: (
 
     .texto{
         margin-top: 10px;
-        font-size: 18px;
+        //font-size: 18px;
     } 
 }
 
@@ -1159,7 +1158,8 @@ $colores-servicios: (
 
 
 
-//DESCRIPCION MOBILE
+/////////////DESCRIPCION MOBILE////////////
+
 .descripcion-home{
     display: grid;
     grid-template-columns: 5% 1fr 5%;
@@ -1212,6 +1212,8 @@ $colores-servicios: (
 
 
 }
+
+
 
 .portfolio-home{
     height: 100%;
@@ -1315,7 +1317,7 @@ $colores-servicios: (
 
 
 
-/*NOSOTROS MOBILE*/
+//////////////NOSOTROS MOBILE/////////////////
 
     .principal-nosotros{
         height: 100vh;
@@ -1365,47 +1367,12 @@ $colores-servicios: (
 
 
 
-/***PORTFOLIO MOBILE***/
+////////////////PORTFOLIO MOBILE///////////////////
 
-.principal-portfolio{
-    height: 100%;
-    display: grid;
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: repeat(2,1fr);
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-
-    .titulo{
-        display: flex;
-        grid-column: 2;
-        grid-row: 1;
-        margin: 0;
-        
-    }
-
-    .carousel{
-        display: flex;
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    .trabajos{
-        display: flex;
-        grid-column: 2;
-        justify-content: center;
-    
-    }
-
-    .trabajo_hijo{
-        margin: 3px 5px;
-    }
-
-    img{
-        width: 290px;
-    }
-    
-}
+/*.portfolio-seccion-2{
+    display: flex;
+    justify-content: flex-start;
+}*/
 
 .portfolio-home{
     margin-bottom: 0 !important;

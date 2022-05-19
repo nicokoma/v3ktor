@@ -395,7 +395,6 @@ main {
 
 .titulo {
   color: #FFF;
-  opacity: 0.7;
 }
 
 .quienes-home {
@@ -878,7 +877,7 @@ main {
   }
 
   .header-nosotros {
-    height: 100vh;
+    height: 75vh;
   }
 
   .nosotros-seccion .titulo {
@@ -896,7 +895,6 @@ main {
   }
   .nosotros-seccion-2 .texto {
     margin-top: 10px;
-    font-size: 18px;
   }
 
   .nosotros-seccion-3 {
@@ -906,7 +904,6 @@ main {
   }
   .nosotros-seccion-3 .texto {
     margin-top: 10px;
-    font-size: 18px;
   }
 
   .nosotros-seccion-4 {
@@ -1045,7 +1042,6 @@ main {
     height: 32px;
   }
 
-  /*NOSOTROS MOBILE*/
   .principal-nosotros {
     height: 100vh;
     display: flex;
@@ -1079,39 +1075,10 @@ main {
     width: 92px;
   }
 
-  /***PORTFOLIO MOBILE***/
-  .principal-portfolio {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  .principal-portfolio .titulo {
-    display: flex;
-    grid-column: 2;
-    grid-row: 1;
-    margin: 0;
-  }
-  .principal-portfolio .carousel {
-    display: flex;
-    grid-column: 2;
-    grid-row: 2;
-  }
-  .principal-portfolio .trabajos {
-    display: flex;
-    grid-column: 2;
-    justify-content: center;
-  }
-  .principal-portfolio .trabajo_hijo {
-    margin: 3px 5px;
-  }
-  .principal-portfolio img {
-    width: 290px;
-  }
-
+  /*.portfolio-seccion-2{
+      display: flex;
+      justify-content: flex-start;
+  }*/
   .portfolio-home {
     margin-bottom: 0 !important;
   }
