@@ -218,7 +218,6 @@ header {
   display: flex;
   width: 90px;
   height: 30px;
-  grid-column: 2/3;
 }
 .encabezado .menu {
   color: #FFF;
@@ -597,7 +596,6 @@ main {
 .servicios-2 .hijo:hover, .servicios-seccion-3 .hijo:hover {
   box-sizing: border-box;
   transition-duration: 600ms;
-  cursor: pointer;
   background: black;
 }
 .servicios-2 .hijo:hover .texto, .servicios-seccion-3 .hijo:hover .texto {
@@ -801,48 +799,32 @@ main {
 
 /***CONTACTO***/
 .contacto {
-  height: 90vh;
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-}
-.contacto .titulo {
+  height: 100vh;
   display: flex;
-  grid-column: 2/3;
-  grid-row: 3;
-  margin-bottom: 20px;
-  font-size: 40px;
 }
-.contacto .formulario {
-  grid-column: 2/6;
-  grid-row: 4/5;
+
+.contacto-seccion-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: radial-gradient(#ccaacf, #aa82ad);
 }
-.contacto .imagen {
-  grid-column: 6/10;
-  grid-row: 2/5;
+.contacto-seccion-1 .titulo {
+  color: #FFF;
 }
-.contacto .boton, .contacto .cliente a, .cliente .contacto a {
-  text-align: center;
-  padding: 5px 10px;
-  background-color: black;
-  border: none;
-  color: white;
-  height: 45px;
-  width: 92px;
-  text-decoration: none;
+.contacto-seccion-1 .mensaje-form {
+  height: 200px;
 }
-.contacto .campo-texto {
-  box-sizing: border-box;
-  padding-left: 10px;
-  width: 70%;
-  height: 30px;
-  margin-bottom: 14px;
-  border: none;
-  background-color: rgb(240, 240, 240);
+
+.formulario {
+  width: 100%;
 }
-.contacto .mensaje-form {
-  resize: none;
-  height: 150px;
+
+.contacto-seccion-2 {
+  background-image: url(../assets/img-contacto.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .contacto textarea {
@@ -1107,10 +1089,6 @@ main {
     width: 92px;
   }
 
-  /*.portfolio-seccion-2{
-      display: flex;
-      justify-content: flex-start;
-  }*/
   .portfolio-home {
     margin-bottom: 0 !important;
   }
@@ -1138,9 +1116,6 @@ main {
   }
 
   /***SERVICIOS MOBILE***/
-  /*.servicios-2{
-      height: 220vh;
-  }*/
   .principal-servicio {
     display: flex;
     justify-content: center;
@@ -1193,25 +1168,23 @@ main {
   }
 
   /***CONTACTO MOBILE***/
-  .contacto {
-    height: 130vh;
-    display: grid;
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: repeat(6, 1fr);
-  }
-  .contacto .titulo {
+  .contacto-seccion-1 {
     display: flex;
-    grid-column: 2;
-    grid-row: 2;
-    margin-bottom: 20px;
-    font-size: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: radial-gradient(#ccaacf, #aa82ad);
+    height: 60vh;
   }
-  .contacto .formulario {
-    grid-column: 2;
-    grid-row: 3;
+  .contacto-seccion-1 .titulo {
+    color: #FFF;
   }
-  .contacto .contacto img {
-    width: 100%;
+  .contacto-seccion-1 .mensaje-form {
+    height: 100px;
+  }
+
+  .contacto-seccion-2 {
+    height: 40vh;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {

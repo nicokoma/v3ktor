@@ -17,10 +17,12 @@
     <title>Contacto</title>
 </head>
 <body>
+
+
     <header class="encabezado">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand navbar-light" href="../index.html"><img class="logo" src="../assets/logo_v3ktor_blanco.png" alt="v3ktor"></a>
+                <a class="navbar-brand navbar-light logo-v3ktor" href="../index.html"><img class="logo" src="../assets/logo_v3ktor_blanco.png" alt="v3ktor"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -47,49 +49,42 @@
         </nav>
     </header>
 
+    <!--Formulario-->
+    <main class="contacto">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-xl-6 col-xs-12 home-left contacto-seccion-1">
+                    <h2 class="titulo">Dejanos tu consulta</h2>
+                        <div class="formulario">
+                            <form action="contact.php" method="POST">
+                                <div class="mb-3">
+                                    <input class="form-control form-control-lg nombre" id="nombre" name="nombre" placeholder="Nombre y Apellido">
+                                </div>
+                                <div class="mb-3">
+                                    <input class="form-control form-control-lg email" id="email" name="email" type="email" placeholder="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control mensaje-form" id="mensaje" name="mensaje" placeholder="Dejanos tu mensaje"></textarea>
+                                </div>
+                                    <input class="boton" id="submit" name="submit" type="submit" value="Enviar">
+                            </form>
+                        </div>
+                </div>
+                <div class="col-md-6 col-xl-6 col-xs-12 home-right contacto-seccion-2">
+                    <h1>CONTACTO</h1>
+                </div>
+            </div>
+        </div>
 
-    <section class="contacto">
-        <!--Formularios-->
-        <h1 class="titulo">Contacto</h1>
         
-        
-        <div class="formulario">
-        <!--
-            <form action="https://formspree.io/f/mbjwpwwz" method="POST">
-            <div class="mb-3">
-                <input class="form-control form-control-lg nombre" id="exampleFormControlInput1" type="text" name="nombre" placeholder="Nombre">
-            </div>
-            <div class="mb-3">
-                <input class="form-control form-control-lg email" id="exampleFormControlInput1" type="email" name="email" placeholder="Email">
-            </div>
-            <div class="mb-3">
-                <textarea class="form-control mensaje-form" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Dejanos tu Comentario"></textarea>
-            </div>
-            <button type="submit" class="boton">ENVIAR</button>
-          </form>
-        -->
-
-    <form action="contact.php" method="POST">
-        <div class="mb-3">
-            <input class="form-control form-control-lg nombre" id="nombre" name="nombre" placeholder="Nombre y Apellido">
-        </div>
-        <div class="mb-3">
-            <input class="form-control form-control-lg email" id="email" name="email" type="email" placeholder="Email">
-        </div>
-        <div class="mb-3">
-            <textarea class="form-control mensaje-form" id="mensaje" name="mensaje" placeholder="Dejanos tu mensaje"></textarea>
-        </div>
-            <input class="boton" id="submit" name="submit" type="submit" value="Enviar">
-     </form>
-
-
-        </div>
-
-        <div class="imagen">
-            <img src="../assets/img-contacto.jpg" alt="Contacto">
-        </div>
-    </section>
+         
+    </main>
     
+
+
+
+
+
     <footer class="pieDepagina"> 
         <div class="logo">
             <img src="../assets/logo_v3ktor_negro.png" alt="v3ktor">

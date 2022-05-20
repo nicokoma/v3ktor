@@ -150,13 +150,11 @@ header{
     .logo{
         display: flex;
         width: 90px;
-        height: 30px;
-        grid-column: 2/3;
-    
-    
-        
+        height: 30px;        
     }
     
+
+
     .menu{
         color: $blanco;
         font-size: 14px;
@@ -682,7 +680,6 @@ main{
             
             box-sizing: border-box;
             transition-duration: 600ms;
-            cursor: pointer;
             background: black;
             
 
@@ -970,58 +967,38 @@ margin-top: 60px;
 /***CONTACTO***/
 
 .contacto{
-    height: 90vh;
-    display: grid;
-    grid-template-columns: repeat(9,1fr);
-    grid-template-rows: repeat(6,1fr);
+    height: 100vh;
+    display: flex;
     
+    
+}
+
+
+.contacto-seccion-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: radial-gradient($violeta, $violeta-oscuro);
+
     .titulo{
-        display: flex;
-        grid-column: 2/3;
-        grid-row: 3;
-        margin-bottom: 20px;
-        font-size: 40px;
-    }
-
-    .formulario{
-        grid-column: 2/6;
-        grid-row: 4/5;
-    }
-
-    .imagen{
-        grid-column: 6/10;
-        grid-row: 2/5;
-    }
-
-    .boton{
-    
-        text-align: center;
-        padding: 5px 10px;
-        background-color: black;
-        border: none;
-        color: white;
-        height: 45px;
-        width: 92px;
-        text-decoration: none;
-    }
-
-    .campo-texto{
-        box-sizing: border-box;
-        padding-left: 10px;
-        width: 70%;
-        height: 30px;
-        margin-bottom: 14px;
-        border: none;
-        background-color: rgb(240, 240, 240);
-    
+        color: $blanco;
     }
 
     .mensaje-form{
-        resize: none;
-        height: 150px;
+        height: 200px;
     }
-    
-    
+
+}
+
+.formulario{
+    width: 100%;
+}
+
+.contacto-seccion-2{
+    background-image: url(../assets/img-contacto.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -1408,11 +1385,6 @@ margin-top: 60px;
 
 ////////////////PORTFOLIO MOBILE///////////////////
 
-/*.portfolio-seccion-2{
-    display: flex;
-    justify-content: flex-start;
-}*/
-
 .portfolio-home{
     margin-bottom: 0 !important;
 }
@@ -1449,10 +1421,6 @@ margin-top: 60px;
 
 /***SERVICIOS MOBILE***/
 
-
-/*.servicios-2{
-    height: 220vh;
-}*/
 
 .principal-servicio{
     //height: 190vh;
@@ -1524,33 +1492,32 @@ margin-top: 60px;
 /***CONTACTO MOBILE***/
 
 
-.contacto{
-    height: 130vh;
-    display: grid;
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: repeat(6,1fr);
+.contacto-seccion-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: radial-gradient($violeta, $violeta-oscuro);
+    height: 60vh;
 
     .titulo{
-        display: flex;
-        grid-column: 2;
-        grid-row: 2;
-        margin-bottom: 20px;
-        font-size: 30px;
+        color: $blanco;
     }
 
-    .formulario{
-        grid-column: 2;
-        grid-row: 3;
+    .mensaje-form{
+        height: 100px;
     }
 
-    .contacto img{
-        width: 100%;
-    }
-    
-    
 }
 
+.contacto-seccion-2{
+    height: 40vh;
 }
+
+
+
+}
+
 
 
 ////////// TABLET ///////////
