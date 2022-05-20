@@ -937,9 +937,11 @@ margin-top: 60px;
 }
 
 .hijo{
+    height: 450px;
     &:hover{
         background: #e9e9e9;
         color: $negro;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 
 

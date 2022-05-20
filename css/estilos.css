@@ -780,9 +780,13 @@ main {
   background-color: white;
   color: #000;
 }
+.servicios-seccion-3 .hijo {
+  height: 450px;
+}
 .servicios-seccion-3 .hijo:hover {
   background: #e9e9e9;
   color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .servicios-seccion-3 .hijo:hover .titulo-servicio {
   color: #000;
