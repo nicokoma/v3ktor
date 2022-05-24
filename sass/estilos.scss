@@ -534,9 +534,13 @@ main{
 
 //HOVER PORTFOLIO
 .cliente{
+
+    opacity: 1;
+    transition: all 600ms;
+    
     
     &:hover{
-        opacity: .5;
+        opacity: .2;
     }
 }
 
@@ -716,6 +720,11 @@ main{
 
 
 /******NOSOTROS********/
+
+.seccion-nosotros{
+    animation: fadeIn;
+    animation-duration: 1s;
+}
 
 .home-left-nosotros{
     display: flex;

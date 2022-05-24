@@ -486,8 +486,12 @@ main {
   margin: 3px 5px;
 }
 
+.cliente {
+  opacity: 1;
+  transition: all 600ms;
+}
 .cliente:hover {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .titulo-servicio h2 {
@@ -620,6 +624,11 @@ main {
 
 /******FIN HOME********/
 /******NOSOTROS********/
+.seccion-nosotros {
+  animation: fadeIn;
+  animation-duration: 1s;
+}
+
 .home-left-nosotros {
   display: flex;
   background-image: url(../assets/img_diseno.jpg);
