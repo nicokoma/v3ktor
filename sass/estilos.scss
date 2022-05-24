@@ -771,6 +771,8 @@ main{
 
     .item-hijo{
 
+        opacity: 1;
+        transition: all 500ms;
 
         &:hover{
             opacity: .5;

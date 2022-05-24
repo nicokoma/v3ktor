@@ -661,6 +661,10 @@ main {
 .item-portfolio h2 {
   font-size: 1em;
 }
+.item-portfolio .item-hijo {
+  opacity: 1;
+  transition: all 500ms;
+}
 .item-portfolio .item-hijo:hover {
   opacity: 0.5;
   cursor: pointer;
