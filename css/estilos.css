@@ -152,7 +152,7 @@ h1 {
   font-size: 3em;
 }
 
-h1, h2, p, button, a, .boton, .cliente a {
+h1, h2, p, button, a, .boton {
   font-family: "outfit-regular";
 }
 
@@ -175,7 +175,7 @@ h3 {
 }
 
 /****BOTON*****/
-.boton, .cliente a {
+.boton {
   width: 117px;
   height: 50px;
   padding: 13px;
@@ -185,7 +185,7 @@ h3 {
   border: none;
   text-decoration: none;
 }
-.boton:hover, .cliente a:hover {
+.boton:hover {
   background-image: linear-gradient(black, rgb(61, 61, 61));
 }
 
@@ -485,86 +485,10 @@ main {
   margin: 3px 5px;
 }
 
-.cliente div {
-  opacity: 0;
-  transition: 100ms;
-  position: absolute;
-  width: 330px;
-  height: 250px;
-  background-color: #aa82ad;
-  color: #FFF;
-  text-decoration: none;
-  margin-left: -12px;
-}
-.cliente a {
-  display: flex;
-  margin: 31%;
-  justify-content: center;
-  border: 1px solid #FFF;
-}
-.cliente a:hover {
-  background-color: #FFF;
-  color: #000;
-  transition-duration: 400ms;
-}
-.cliente:hover div {
-  opacity: 0.9;
-  cursor: pointer;
-  transition-duration: 400ms;
+.cliente:hover {
+  opacity: 0.5;
 }
 
-@media screen and (max-width: 575px) {
-  .cliente div {
-    width: 374px;
-    height: 291px;
-  }
-
-  .cliente a {
-    margin: 125px;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  .cliente div {
-    width: 538px;
-  }
-
-  .cliente a {
-    margin: 100px 205px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .cliente div {
-    width: 178px;
-    height: 155px;
-  }
-
-  .cliente a {
-    margin: 34% 26%;
-    width: 80px;
-    height: 30px;
-    font-size: 12px;
-    padding: 6px 0;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .cliente div {
-    width: 238px;
-    height: 214px;
-  }
-
-  .cliente a {
-    margin: 80px 60px;
-  }
-}
-@media screen and (min-width: 1201px) and (max-width: 1399px) {
-  .cliente div {
-    width: 285px;
-  }
-
-  .cliente a {
-    margin: 35% 29%;
-  }
-}
 .titulo-servicio h2 {
   font-family: 2em;
 }
@@ -783,10 +707,10 @@ main {
 .servicios-seccion-3 {
   margin-top: 60px;
 }
-.servicios-seccion-3 .boton, .servicios-seccion-3 .cliente a, .cliente .servicios-seccion-3 a {
+.servicios-seccion-3 .boton {
   border: 1px solid #000;
 }
-.servicios-seccion-3 .boton:hover, .servicios-seccion-3 .cliente a:hover, .cliente .servicios-seccion-3 a:hover {
+.servicios-seccion-3 .boton:hover {
   border: 1px solid #000;
   background-color: white;
   color: #000;
@@ -795,18 +719,27 @@ main {
   height: 450px;
 }
 .servicios-seccion-3 .hijo:hover {
-  background: #e9e9e9;
-  color: #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #000;
+  animation: fadeIn;
+  animation-duration: 1s;
 }
 .servicios-seccion-3 .hijo:hover .titulo-servicio {
-  color: #000;
+  color: #FFF;
 }
 .servicios-seccion-3 .hijo:hover .icon-serv {
-  color: #000;
+  color: #FFF;
 }
 .servicios-seccion-3 .hijo:hover .texto {
+  color: #FFF;
+}
+.servicios-seccion-3 .hijo:hover .boton {
+  background-color: #FFF;
   color: #000;
+  border: 1px solid #FFF;
+}
+.servicios-seccion-3 .hijo:hover .boton:hover {
+  background-color: #000;
+  color: #FFF;
 }
 
 /***CONTACTO***/
@@ -1104,7 +1037,7 @@ main {
     font-family: "outfit-regular";
     padding-left: 0;
   }
-  .principal-nosotros .boton, .principal-nosotros .cliente a, .cliente .principal-nosotros a {
+  .principal-nosotros .boton {
     grid-area: boton;
     text-align: center;
     margin: 20px 0 0 0;
@@ -1175,7 +1108,7 @@ main {
     height: 50px;
   }
 
-  .servicios-boot .boton, .servicios-boot .cliente a, .cliente .servicios-boot a {
+  .servicios-boot .boton {
     display: inline;
   }
 

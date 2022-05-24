@@ -533,107 +533,11 @@ main{
 
 //HOVER PORTFOLIO
 .cliente{
-
-
-    div {
-        opacity: 0;
-        transition: 100ms;
-        position: absolute;
-        width: 330px;
-        height: 250px;
-        background-color: $violeta-oscuro;
-        color: $blanco;
-        text-decoration: none;
-        margin-left: -12px;
-        
-        
     
-    }
-
-    a{
-
-        @extend .boton;
-        display: flex;
-        margin: 31%;
-        justify-content: center;
-        border: 1px solid $blanco;
-
-        &:hover{
-            background-color: $blanco;
-            color: $negro;
-            transition-duration: 400ms;
-        }
-    }
-
-
     &:hover{
-        div{
-            opacity: .9;
-            cursor: pointer;
-            transition-duration: 400ms;
-        }
+        opacity: .5;
     }
 }
-
-@media screen and (max-width: 575px){
-    .cliente div{
-        width: 374px;
-        height: 291px;
-    }
-
-    .cliente a{
-        margin: 125px;
-    }
-}
-
-@media screen and (min-width: 576px) and (max-width: 767px){
-    .cliente div{
-        width: 538px;
-
-    }
-
-    .cliente a{
-        margin: 100px 205px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px){
-    .cliente div{
-        width: 178px;
-        height: 155px;
-    }
-
-    .cliente a{
-        margin: 34% 26%;
-        width: 80px;
-        height: 30px;
-        font-size: 12px;
-        padding: 6px 0;
-    }
-
-}
-
-@media screen and (min-width: 992px) and (max-width: 1200px){
-    .cliente div{
-        width: 238px;
-        height: 214px;
-    }
-
-    .cliente a{
-        margin: 80px 60px;
-    }
-}
-
-@media screen and (min-width: 1201px) and (max-width: 1399px){
-    .cliente div{
-        width: 285px;
-    }
-
-    .cliente a{
-        margin: 35% 29%;
-    }
-}
-//FIN HOVER PORTFOLIO
 
 
 
@@ -944,23 +848,36 @@ margin-top: 60px;
 
 .hijo{
     height: 450px;
+
     &:hover{
-        background: #e9e9e9;
-        color: $negro;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-color: $negro;
+        animation: fadeIn;
+        animation-duration: 1s;
+    
 
 
 
         .titulo-servicio{
-            color: $negro;
+            color: $blanco;
         }
 
         .icon-serv{
-            color: $negro;
+            color: $blanco;
         }
 
         .texto{
+            color: $blanco;
+        }
+
+        .boton{
+            background-color: $blanco;
             color: $negro;
+            border: 1px solid $blanco;
+            
+            &:hover{
+                background-color: $negro;
+                color: $blanco;
+            }
         }
         
     }
