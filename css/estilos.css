@@ -201,6 +201,7 @@ h3 {
   color: #FFF;
   border-radius: 30px;
   border: none;
+  padding: 0 !important;
 }
 
 /****HOME*****/
