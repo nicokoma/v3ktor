@@ -185,6 +185,9 @@ h3 {
   border: none;
   text-decoration: none;
 }
+.boton:hover, .cliente a:hover {
+  background-image: linear-gradient(black, rgb(61, 61, 61));
+}
 
 .botonera-popup {
   display: flex;
@@ -330,15 +333,15 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: white;
-  color: #000;
+  background-image: radial-gradient(#67d6ea, #12abca);
+  color: #FFF;
   /*background-image: url(../assets/img_desarrollo.jpg);
   background-size: cover;
   background-position: center;*/
 }
 .nosotros-home-2 .titulo {
   margin-top: 10px;
-  color: #000;
+  color: #FFF;
   font-size: 5em;
 }
 
@@ -415,7 +418,7 @@ main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(9, 1fr);
-  background-image: linear-gradient(#67d6ea, #12abca);
+  background-image: linear-gradient(#000, rgb(71, 71, 71));
   color: #FFF;
   box-sizing: border-box;
   font-size: 4em;
@@ -449,7 +452,7 @@ main {
   color: #FFF;
   font-size: 2.3em;
   line-height: 100px;
-  opacity: 0.4;
+  opacity: 0.2;
   margin-left: 40px;
 }
 
@@ -592,28 +595,37 @@ main {
   text-align: center;
   height: 400px;
   background: none;
-}
-.servicios-2 .hijo:hover, .servicios-seccion-3 .hijo:hover {
-  box-sizing: border-box;
-  transition-duration: 600ms;
-  background: black;
-}
-.servicios-2 .hijo:hover .texto, .servicios-seccion-3 .hijo:hover .texto {
-  color: #FFF;
-}
-.servicios-2 .hijo:hover .titulo-servicio, .servicios-seccion-3 .hijo:hover .titulo-servicio {
-  color: #FFF;
-}
-.servicios-2 .hijo:hover .icon-serv, .servicios-seccion-3 .hijo:hover .icon-serv {
-  color: #FFF;
-}
-.servicios-2 .hijo:hover a, .servicios-seccion-3 .hijo:hover a {
-  border: 1px solid #FFF;
-}
-.servicios-2 .hijo:hover a:hover, .servicios-seccion-3 .hijo:hover a:hover {
-  background: #FFF;
-  color: #000;
-  transition: 400ms;
+  /*
+  &:hover{
+
+      box-sizing: border-box;
+      transition-duration: 600ms;
+      background: black;
+
+
+      .texto{
+          color: $blanco;
+      }
+      .titulo-servicio{
+          color: $blanco;
+      }
+
+      .icon-serv{
+          color: $blanco;
+      }
+
+      a{
+          border: 1px solid $blanco;
+      }
+
+
+      a:hover{
+          background:$blanco;
+          color: $negro;
+          transition: 400ms;
+      }
+  }
+  */
 }
 
 .section-video {
@@ -805,9 +817,9 @@ main {
 
 .contacto-seccion-1 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
   background-image: radial-gradient(#ccaacf, #aa82ad);
 }
 .contacto-seccion-1 .titulo {
@@ -818,6 +830,17 @@ main {
 }
 
 .formulario {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.formulario .nombre {
+  width: 100%;
+}
+.formulario .email {
+  width: 100%;
+}
+.formulario .mensaje {
   width: 100%;
 }
 
@@ -825,6 +848,10 @@ main {
   background-image: url(../assets/img-contacto.jpg);
   background-size: cover;
   background-position: center;
+}
+.contacto-seccion-2 .titulo {
+  color: #FFF;
+  opacity: 0.5;
 }
 
 .contacto textarea {

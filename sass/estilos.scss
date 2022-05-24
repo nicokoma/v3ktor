@@ -105,6 +105,12 @@ h3{
     background:$negro;
     border: none;
     text-decoration: none;
+    
+    &:hover{
+            background-image: linear-gradient(black, rgb(61, 61, 61));
+        }
+    
+
 }
 
 
@@ -310,12 +316,12 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: white;
-    color: $negro;
+    background-image: radial-gradient($celeste,$celeste-oscuro);
+    color: $blanco;
 
     .titulo{
         margin-top: 10px;
-        color: $negro;
+        color: $blanco;
         font-size: 5em;
     }
     /*background-image: url(../assets/img_desarrollo.jpg);
@@ -429,7 +435,7 @@ main{
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(9,1fr);
     //background-color: $celeste;
-    background-image: linear-gradient($celeste,$celeste-oscuro);
+    background-image: linear-gradient($negro, rgb(71, 71, 71));
     color: $blanco;
     box-sizing: border-box;
     font-size: 4em;
@@ -467,7 +473,7 @@ main{
         color: $blanco;
         font-size: 2.3em;
         line-height: 100px;
-        opacity: .4;
+        opacity: .2;
         margin-left: 40px;
     }
 
@@ -676,6 +682,7 @@ main{
         height: 400px;
         background: none;
 
+        /*
         &:hover{
             
             box-sizing: border-box;
@@ -705,6 +712,7 @@ main{
                 transition: 400ms;
             }
         }
+        */
     }
 }
 
@@ -976,9 +984,9 @@ margin-top: 60px;
 
 .contacto-seccion-1{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
     background-image: radial-gradient($violeta, $violeta-oscuro);
 
     .titulo{
@@ -992,13 +1000,35 @@ margin-top: 60px;
 }
 
 .formulario{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+
+    .nombre{
+        width: 100%;
+    }
+
+    .email{
+        width: 100%;
+    }
+
+    .mensaje{
+        width: 100%;
+    }
+
+
 }
 
 .contacto-seccion-2{
     background-image: url(../assets/img-contacto.jpg);
     background-size: cover;
     background-position: center;
+    
+    .titulo{
+        color: $blanco;
+        opacity: .5;
+    }
 }
 
 
