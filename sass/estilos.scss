@@ -400,6 +400,11 @@ main{
     color: $negro;
     background-image: radial-gradient($celeste,$celeste-oscuro);
     color: $blanco;
+    text-align: left;
+
+    .texto{
+        text-align: left;
+    }
         
     h1{
         color: $blanco;
@@ -1127,9 +1132,11 @@ margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    height: 60vh;
 
     .texto{
         margin-top: 10px;
+        text-align: left;
         //font-size: 18px;
     } 
 }
