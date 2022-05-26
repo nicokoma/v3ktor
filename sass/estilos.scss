@@ -384,9 +384,15 @@ main{
     background-image: radial-gradient($violeta,$violeta-oscuro);
     color: $blanco;
 
-    h1{
+    h1, h2{
         color: $blanco;
     }
+
+    h2{
+        font-size: 20px;
+        font-family: $tipografia-v3ktor-bold;
+    }
+
 }
 
 .nosotros-seccion-3{
@@ -737,6 +743,10 @@ main{
 .seccion-nosotros{
     animation: fadeIn;
     animation-duration: 1s;
+
+    .boton{
+        padding: 0;
+    }
 }
 
 .home-left-nosotros{
@@ -752,6 +762,7 @@ main{
     background-image: url(../assets/img_desarrollo.jpg);
     background-position: center;
     background-size: cover;
+
 }
 
 
@@ -1084,7 +1095,7 @@ margin-top: 60px;
     
 
 .header-nosotros{
-    height: 75vh;
+    height: 80vh;
 }
 
 .nosotros-seccion{
@@ -1095,6 +1106,7 @@ margin-top: 60px;
 
 
 .nosotros-seccion-2{
+    height: 63vh;
     display: flex;
     flex-direction: column;
     justify-content: start;

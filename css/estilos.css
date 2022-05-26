@@ -387,8 +387,12 @@ main {
   background-image: radial-gradient(#ccaacf, #aa82ad);
   color: #FFF;
 }
-.nosotros-seccion-2 h1 {
+.nosotros-seccion-2 h1, .nosotros-seccion-2 h2 {
   color: #FFF;
+}
+.nosotros-seccion-2 h2 {
+  font-size: 20px;
+  font-family: "outfit-bold";
 }
 
 .nosotros-seccion-3 {
@@ -639,6 +643,9 @@ main {
   animation: fadeIn;
   animation-duration: 1s;
 }
+.seccion-nosotros .boton {
+  padding: 0;
+}
 
 .home-left-nosotros {
   display: flex;
@@ -875,7 +882,7 @@ main {
   }
 
   .header-nosotros {
-    height: 75vh;
+    height: 80vh;
   }
 
   .nosotros-seccion .titulo {
@@ -883,6 +890,7 @@ main {
   }
 
   .nosotros-seccion-2 {
+    height: 63vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
