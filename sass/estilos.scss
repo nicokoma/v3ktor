@@ -289,7 +289,20 @@ main{
     color: $blanco;
 
 
+    @keyframes opacidad{
+        0% {
+            opacity: 0;
+          }
+        100% {
+            opacity: 1;
+          }
+        }
+        
     h1{
+        opacity: 0;
+        animation: opacidad 1s 1s;
+        animation-timing-function: ease;
+       // animation-iteration-count: infinite;
         color: $blanco;
     }
     }
@@ -862,11 +875,13 @@ margin-top: 60px;
 
 .hijo{
     height: 450px;
+    transition: all 1s;
 
     &:hover{
         background-color: $negro;
-        animation: fadeIn;
-        animation-duration: 1s;
+        //animation: fadeIn;
+        //animation-duration: 1s;
+        
     
 
 

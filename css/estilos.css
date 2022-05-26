@@ -315,7 +315,18 @@ main {
   background-image: radial-gradient(#ccaacf, #aa82ad);
   color: #FFF;
 }
+@keyframes opacidad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .inicio-home h1 {
+  opacity: 0;
+  animation: opacidad 1s 1s;
+  animation-timing-function: ease;
   color: #FFF;
 }
 
@@ -731,11 +742,10 @@ main {
 }
 .servicios-seccion-3 .hijo {
   height: 450px;
+  transition: all 1s;
 }
 .servicios-seccion-3 .hijo:hover {
   background-color: #000;
-  animation: fadeIn;
-  animation-duration: 1s;
 }
 .servicios-seccion-3 .hijo:hover .titulo-servicio {
   color: #FFF;
