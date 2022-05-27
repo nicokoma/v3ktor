@@ -289,7 +289,7 @@ main{
     color: $blanco;
 
 
-    @keyframes opacidad{
+   /* @keyframes opacidad{
         0% {
             opacity: 0;
           }
@@ -297,11 +297,11 @@ main{
             opacity: 1;
           }
         }
-        
+        */
     h1{
-        opacity: 0;
-        animation: opacidad 1s 1s;
-        animation-timing-function: ease;
+        opacity: 1;
+        //animation: opacidad 1s 1s;
+        //animation-timing-function: ease;
        // animation-iteration-count: infinite;
         color: $blanco;
     }
@@ -770,6 +770,11 @@ main{
 
 }
 
+.seccion-nosotros{
+    .titulo{
+        opacity: .5;
+    }
+}
 
 
 

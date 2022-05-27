@@ -314,19 +314,18 @@ main {
 .inicio-home {
   background-image: radial-gradient(#ccaacf, #aa82ad);
   color: #FFF;
-}
-@keyframes opacidad {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  /* @keyframes opacidad{
+       0% {
+           opacity: 0;
+         }
+       100% {
+           opacity: 1;
+         }
+       }
+       */
 }
 .inicio-home h1 {
-  opacity: 0;
-  animation: opacidad 1s 1s;
-  animation-timing-function: ease;
+  opacity: 1;
   color: #FFF;
 }
 
@@ -663,6 +662,10 @@ main {
   background-image: url(../assets/img_desarrollo.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.seccion-nosotros .titulo {
+  opacity: 0.5;
 }
 
 /***PORTFOLIO***/
