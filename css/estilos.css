@@ -669,6 +669,10 @@ main {
 }
 
 /***PORTFOLIO***/
+.portfolio {
+  margin-bottom: 40px;
+}
+
 .portfolio-seccion {
   background-image: url(../assets/img_portfolio.jpg);
   background-size: cover;
@@ -1092,6 +1096,10 @@ main {
 
   .portfolio-home {
     margin-bottom: 0 !important;
+  }
+
+  .portfolio-seccion-2 {
+    height: 65vh;
   }
 
   .section-video {
