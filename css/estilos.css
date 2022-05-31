@@ -1148,6 +1148,11 @@ main {
     text-align: center;
   }
 
+  .servicios {
+    display: flex;
+    flex-direction: column;
+  }
+
   .servicio_hijo {
     text-align: center;
     margin-bottom: 20px;

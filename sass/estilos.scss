@@ -858,6 +858,7 @@ main{
 
 .servicios{
     display: flex;
+    
 }
 
 .servicios-seccion-1{
@@ -1430,6 +1431,7 @@ margin-top: 60px;
 /***SERVICIOS MOBILE***/
 
 
+
 .principal-servicio{
     //height: 190vh;
     display: flex;
@@ -1459,6 +1461,10 @@ margin-top: 60px;
     text-align: center;
 }
 
+.servicios{
+    display: flex;
+    flex-direction: column;
+}
 
 .servicio_hijo{
     text-align: center;
