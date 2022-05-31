@@ -76,7 +76,7 @@
                     <i class="fa-solid fa-globe icon-serv"></i>
                     <h2 class="titulo-servicio">Diseño Web</h2>
                     <p class="texto">Diseñamos Sitios Web Adaptables, Estéticos y Funcionales. <br> Llená el Formulario y Conocenos.</p>
-                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">DETALLE</button>
+                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">CONSULTAS</button>
                 </div>
             </div>
             <div class="col-lg-6 col-12">
@@ -84,7 +84,7 @@
                     <i class="fa-solid fa-cart-shopping icon-serv"></i>
                     <h2 class="titulo-servicio">E-commerce</h2>
                     <p class="texto">Desarrollamos tiendas online atractivas para aumentar<br> tus posibilidades de ventas.</p>
-                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@mdo">DETALLE</button>
+                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@mdo">CONSULTAS</button>
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@
                     <i class="fa-brands fa-html5 icon-serv"></i>
                     <h2 class="titulo-servicio">Banners HTML5</h2>
                     <p class="texto">Diseño y desarrollo de banners responsive con HTML y CSS.</p>
-                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal3" data-bs-whatever="@mdo">DETALLE</button>
+                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal3" data-bs-whatever="@mdo">CONSULTAS</button>
                 </div>
             </div>
             <div class="col-lg-6 col-12 center">
@@ -103,7 +103,7 @@
                     <i class="fa-solid fa-code icon-serv"></i>
                     <h2 class="titulo-servicio">Desarrollo Web</h2>
                     <p class="texto">Desarrollo web Full Stack con HTML, CSS y JavaScript.</p>
-                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal4" data-bs-whatever="@mdo">DETALLE</button>
+                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal4" data-bs-whatever="@mdo">CONSULTAS</button>
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
                     <i class="fa-solid fa-gears icon-serv"></i>
                     <h2 class="titulo-servicio">Mantenimieto</h2>
                     <p class="texto">Backups de archivos y base de datos, actualización de contenidos<br> y migración de servidores.</p>
-                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal5" data-bs-whatever="@mdo">DETALLE</button>
+                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal5" data-bs-whatever="@mdo">CONSULTAS</button>
                 </div>
             </div>
             <div class="col-lg-6 col-12">
@@ -122,7 +122,7 @@
                     <i class="fa-solid fa-circle-nodes icon-serv"></i>
                     <h2 class="titulo-servicio">Web APIS</h2>
                     <p class="texto">Desarrollo de web APIS para diseñar e integrar el software de las aplicaciones</p>
-                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal6" data-bs-whatever="@mdo">DETALLE</button>
+                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal6" data-bs-whatever="@mdo">CONSULTAS</button>
                 </div>
             </div>
         </div>
@@ -134,16 +134,25 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Envíenos su consulta</h5>
+            <h5 class="modal-title" id="exampleModalLabel"><b>Diseño Web</b></h5>
             <button type="button" class="cerrar" data-bs-dismiss="modal" aria-label="Close">X</button>
         </div>
             <div class="modal-body">
-                <h1>SERVICIO 1</h1>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, commodi! Nesciunt et ratione totam alias officia voluptatem ducimus praesentium expedita ut accusamus vero autem doloremque consequuntur, cum pariatur, sint id?
-
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem error amet dicta corporis provident. Aperiam repellendus facere quaerat, hic voluptatibus necessitatibus omnis. Ullam nam fugit corporis suscipit tempora, reprehenderit nesciunt?
-
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque inventore placeat quis dolor nisi impedit corrupti magni sapiente repudiandae obcaecati, aliquid, minus sunt eveniet sequi natus repellat numquam ipsum esse!
+                <form action="https://formspree.io/f/mbjwpwwz" method="POST">
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Nombre:</label>
+                        <input type="text" name="nombre" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Mensaje:</label>
+                        <textarea name="message" class="form-control" id="message-text"></textarea>
+                    </div>
+                    <div class="botonera-popup">
+                        <button type="submit" class="boton">Enviar</button>
+                        <button type="button" class="boton" data-bs-dismiss="modal">Borrar</button>
+                        
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -155,16 +164,25 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Envíenos su consulta</h5>
+            <h5 class="modal-title" id="exampleModalLabel"><b>E-commerce</b></h5>
             <button type="button" class="cerrar" data-bs-dismiss="modal" aria-label="Close">X</button>
         </div>
             <div class="modal-body">
-                <h1>SERVICIO 2</h1>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, commodi! Nesciunt et ratione totam alias officia voluptatem ducimus praesentium expedita ut accusamus vero autem doloremque consequuntur, cum pariatur, sint id?
-
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem error amet dicta corporis provident. Aperiam repellendus facere quaerat, hic voluptatibus necessitatibus omnis. Ullam nam fugit corporis suscipit tempora, reprehenderit nesciunt?
-
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque inventore placeat quis dolor nisi impedit corrupti magni sapiente repudiandae obcaecati, aliquid, minus sunt eveniet sequi natus repellat numquam ipsum esse!
+                <form action="https://formspree.io/f/mbjwpwwz" method="POST">
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Nombre:</label>
+                        <input type="text" name="nombre" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Mensaje:</label>
+                        <textarea name="message" class="form-control" id="message-text"></textarea>
+                    </div>
+                    <div class="botonera-popup">
+                        <button type="submit" class="boton">Enviar</button>
+                        <button type="button" class="boton" data-bs-dismiss="modal">Borrar</button>
+                        
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -174,16 +192,25 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Envíenos su consulta</h5>
+            <h5 class="modal-title" id="exampleModalLabel"><b>Banners HTML5</b></h5>
             <button type="button" class="cerrar" data-bs-dismiss="modal" aria-label="Close">X</button>
         </div>
             <div class="modal-body">
-                <h1>SERVICIO 3</h1>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, commodi! Nesciunt et ratione totam alias officia voluptatem ducimus praesentium expedita ut accusamus vero autem doloremque consequuntur, cum pariatur, sint id?
-
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem error amet dicta corporis provident. Aperiam repellendus facere quaerat, hic voluptatibus necessitatibus omnis. Ullam nam fugit corporis suscipit tempora, reprehenderit nesciunt?
-
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque inventore placeat quis dolor nisi impedit corrupti magni sapiente repudiandae obcaecati, aliquid, minus sunt eveniet sequi natus repellat numquam ipsum esse!
+                <form action="https://formspree.io/f/mbjwpwwz" method="POST">
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Nombre:</label>
+                        <input type="text" name="nombre" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Mensaje:</label>
+                        <textarea name="message" class="form-control" id="message-text"></textarea>
+                    </div>
+                    <div class="botonera-popup">
+                        <button type="submit" class="boton">Enviar</button>
+                        <button type="button" class="boton" data-bs-dismiss="modal">Borrar</button>
+                        
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -195,16 +222,25 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Envíenos su consulta</h5>
+            <h5 class="modal-title" id="exampleModalLabel"><b>Desarrollo Web</b></h5>
             <button type="button" class="cerrar" data-bs-dismiss="modal" aria-label="Close">X</button>
         </div>
             <div class="modal-body">
-                <h1>SERVICIO 4</h1>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, commodi! Nesciunt et ratione totam alias officia voluptatem ducimus praesentium expedita ut accusamus vero autem doloremque consequuntur, cum pariatur, sint id?
-
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem error amet dicta corporis provident. Aperiam repellendus facere quaerat, hic voluptatibus necessitatibus omnis. Ullam nam fugit corporis suscipit tempora, reprehenderit nesciunt?
-
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque inventore placeat quis dolor nisi impedit corrupti magni sapiente repudiandae obcaecati, aliquid, minus sunt eveniet sequi natus repellat numquam ipsum esse!
+                <form action="https://formspree.io/f/mbjwpwwz" method="POST">
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Nombre:</label>
+                        <input type="text" name="nombre" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Mensaje:</label>
+                        <textarea name="message" class="form-control" id="message-text"></textarea>
+                    </div>
+                    <div class="botonera-popup">
+                        <button type="submit" class="boton">Enviar</button>
+                        <button type="button" class="boton" data-bs-dismiss="modal">Borrar</button>
+                        
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -215,16 +251,25 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Envíenos su consulta</h5>
+            <h5 class="modal-title" id="exampleModalLabel"><b>Mantenimiento</b></h5>
             <button type="button" class="cerrar" data-bs-dismiss="modal" aria-label="Close">X</button>
         </div>
             <div class="modal-body">
-                <h1>SERVICIO 5</h1>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, commodi! Nesciunt et ratione totam alias officia voluptatem ducimus praesentium expedita ut accusamus vero autem doloremque consequuntur, cum pariatur, sint id?
-
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem error amet dicta corporis provident. Aperiam repellendus facere quaerat, hic voluptatibus necessitatibus omnis. Ullam nam fugit corporis suscipit tempora, reprehenderit nesciunt?
-
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque inventore placeat quis dolor nisi impedit corrupti magni sapiente repudiandae obcaecati, aliquid, minus sunt eveniet sequi natus repellat numquam ipsum esse!
+                <form action="https://formspree.io/f/mbjwpwwz" method="POST">
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Nombre:</label>
+                        <input type="text" name="nombre" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Mensaje:</label>
+                        <textarea name="message" class="form-control" id="message-text"></textarea>
+                    </div>
+                    <div class="botonera-popup">
+                        <button type="submit" class="boton">Enviar</button>
+                        <button type="button" class="boton" data-bs-dismiss="modal">Borrar</button>
+                        
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -235,16 +280,25 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Envíenos su consulta</h5>
+            <h5 class="modal-title" id="exampleModalLabel"><b>Web APIS</b></h5>
             <button type="button" class="cerrar" data-bs-dismiss="modal" aria-label="Close">X</button>
         </div>
             <div class="modal-body">
-                <h1>SERVICIO 5</h1>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, commodi! Nesciunt et ratione totam alias officia voluptatem ducimus praesentium expedita ut accusamus vero autem doloremque consequuntur, cum pariatur, sint id?
-
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem error amet dicta corporis provident. Aperiam repellendus facere quaerat, hic voluptatibus necessitatibus omnis. Ullam nam fugit corporis suscipit tempora, reprehenderit nesciunt?
-
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque inventore placeat quis dolor nisi impedit corrupti magni sapiente repudiandae obcaecati, aliquid, minus sunt eveniet sequi natus repellat numquam ipsum esse!
+                <form action="https://formspree.io/f/mbjwpwwz" method="POST">
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Nombre:</label>
+                        <input type="text" name="nombre" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Mensaje:</label>
+                        <textarea name="message" class="form-control" id="message-text"></textarea>
+                    </div>
+                    <div class="botonera-popup">
+                        <button type="submit" class="boton">Enviar</button>
+                        <button type="button" class="boton" data-bs-dismiss="modal">Borrar</button>
+                        
+                    </div>
+                </form>
             </div>
         </div>
     </div>
