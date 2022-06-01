@@ -1604,6 +1604,32 @@ margin-top: 60px;
 
 
 
+////////////TABLET/////////////
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    .menu-v3ktor{
+        position: static;
+    }
+
+    .inicio-home, .nosotros-home-2{
+        h1{
+            font-size: 3.5em;
+        }
+    }
+
+    .inicio-home-2{
+        background-position: center;
+    }
+
+
+
+
+}
+
+
+
 
 
 /*******FIN MEDIA QUERIES********/
