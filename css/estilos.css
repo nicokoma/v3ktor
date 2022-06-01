@@ -1226,6 +1226,20 @@ main {
     display: flex;
     flex-direction: column-reverse;
   }
+
+  .contacto {
+    height: 100%;
+    display: block;
+  }
+
+  .contacto-seccion-1 {
+    align-items: start;
+    height: 130vh;
+  }
+
+  .contacto-seccion-2 {
+    height: 100vh;
+  }
 }
 /*******FIN MEDIA QUERIES********/
 
