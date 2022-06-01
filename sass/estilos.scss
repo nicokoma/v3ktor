@@ -67,29 +67,6 @@ h1, h2, p, button, a, .boton{
 
 
 
-//MIXINS CON PARAMETROS
-
-
-@mixin fuente ($color-fuente, $transformacion) {
-    text-transform: $transformacion;
-    color: $color-fuente;
-}
-
-h1{
-    font-size: $tamano-h1;
-    @include fuente(rgb(0, 0, 0), capitalize)
-}
-
-h2{
-    font-size: $tamano-h2;
-    @include fuente(rgb(0, 0, 0), capitalize)
-}
-
-h3{
-    font-size: $tamano-h3;
-    @include fuente(rgb(0, 0, 0), uppercase)
-}
-
 
 
 
@@ -1551,34 +1528,41 @@ margin-top: 60px;
 
 ////////// TABLET ///////////
 @media screen and (min-width: 601px) and (max-width: 1024px){
-    .home-left{
 
-        
-    
+    .home-left, .home-right{
         h1{
-            font-size: 3.5em;
-
+            font-size: 3em;
+            color: white;
         }
 
+        .texto{
+            font-size: 1em;
+        }
     }
-    
-    .home-right{
+
+
+    .desarrollo{
         display: flex;
-        //background-color: $celeste;
-        background-image: radial-gradient($celeste,$celeste-oscuro );
-        height: $h-100-v3ktor;
-        align-items: center;
-        background-image: url(../assets/img_index.jpg);
-        background-size: cover;
+        flex-direction: column-reverse;
     
-        h1{
-            font-size: 6em;
-            font-family: $tipografia-v3ktor-bold;
-            text-transform: uppercase;
-            color: $blanco;
-        }
     }
+
+    
+    .menu-v3ktor{
+        position: static;
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 

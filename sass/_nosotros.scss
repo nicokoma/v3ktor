@@ -49,24 +49,7 @@ $color-title: #FFFFFF;
 
 //CONDICIONALES - IF
 
-$color-fondo2: black;
-$relleno:10px;
 
-h1{
-    @if ($color-fondo2 == red) {
-        color: blue;
-        background-color: green;
-        text-align: center;
-        padding: $relleno;
-    } 
-    @else if $color-fondo2 == blue{
-        color: #935454;
-    }
-    @else{
-        color: $color-fondo2;
-        ;        
-    }
-}
 
 //CICLO - FOR
 

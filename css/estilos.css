@@ -39,10 +39,6 @@
   font-family: "outfit-regular";
 }
 
-h1 {
-  color: black;
-}
-
 .col-1 {
   width: 10%;
 }
@@ -154,24 +150,6 @@ h1 {
 
 h1, h2, p, button, a, .boton {
   font-family: "outfit-regular";
-}
-
-h1 {
-  font-size: 3em;
-  text-transform: capitalize;
-  color: rgb(0, 0, 0);
-}
-
-h2 {
-  font-size: 2em;
-  text-transform: capitalize;
-  color: rgb(0, 0, 0);
-}
-
-h3 {
-  font-size: 1em;
-  text-transform: uppercase;
-  color: rgb(0, 0, 0);
 }
 
 /****BOTON*****/
@@ -1214,23 +1192,21 @@ main {
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  .home-left h1 {
-    font-size: 3.5em;
+  .home-left h1, .home-right h1 {
+    font-size: 3em;
+    color: white;
+  }
+  .home-left .texto, .home-right .texto {
+    font-size: 1em;
   }
 
-  .home-right {
+  .desarrollo {
     display: flex;
-    background-image: radial-gradient(#67d6ea, #12abca);
-    height: 100vh;
-    align-items: center;
-    background-image: url(../assets/img_index.jpg);
-    background-size: cover;
+    flex-direction: column-reverse;
   }
-  .home-right h1 {
-    font-size: 6em;
-    font-family: "outfit-bold";
-    text-transform: uppercase;
-    color: #FFF;
+
+  .menu-v3ktor {
+    position: static;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
