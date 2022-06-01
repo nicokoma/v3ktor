@@ -1246,7 +1246,7 @@ main {
     position: static;
   }
 
-  .inicio-home h1, .nosotros-home-2 h1, .nosotros-seccion-2 h1, .nosotros-seccion-3 h1 {
+  .inicio-home h1, .nosotros-home-2 h1, .nosotros-seccion-2 h1, .nosotros-seccion-3 h1, .portfolio-seccion-2 h1 {
     font-size: 3.5em;
   }
 
