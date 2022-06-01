@@ -998,13 +998,15 @@ margin-top: 60px;
 
 
 
-
-
-
 /********MEDIA QUERIES*********/
 
+
+
+
+////////////CELULARES VERTICAL/////////////
+
 ////////////HOME MOBILE///////////
-@media screen and (max-width: 600px){
+@media screen and (max-width: 480px){
 
     .encabezado {
         .navbar-v3ktor{
@@ -1526,8 +1528,15 @@ margin-top: 60px;
 
 
 
-////////// TABLET ///////////
-@media screen and (min-width: 601px) and (max-width: 1024px){
+
+
+
+
+
+
+
+////////////CELULARES HORIZONTAL/////////////
+@media screen and (min-width: 481px) and (max-width: 767px){
 
     .home-left, .home-right{
         h1{
@@ -1553,20 +1562,13 @@ margin-top: 60px;
     }
 
 
+    .header-nosotros{
+        height: 90vh;
+    }
+
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-//MOBILE HORIZONTAL
 
 @media screen and (min-width: 576px) and (max-width: 767px){
     .quienes-home{

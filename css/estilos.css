@@ -818,7 +818,7 @@ main {
 }
 
 /********MEDIA QUERIES*********/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .encabezado .navbar-v3ktor {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1191,7 +1191,7 @@ main {
     text-align: left;
   }
 }
-@media screen and (min-width: 601px) and (max-width: 1024px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .home-left h1, .home-right h1 {
     font-size: 3em;
     color: white;
@@ -1207,6 +1207,10 @@ main {
 
   .menu-v3ktor {
     position: static;
+  }
+
+  .header-nosotros {
+    height: 90vh;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
