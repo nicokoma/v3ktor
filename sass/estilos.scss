@@ -1567,10 +1567,6 @@ margin-top: 60px;
     }
 
 
-}
-
-
-@media screen and (min-width: 576px) and (max-width: 767px){
     .quienes-home{
         height: 100% ;
     }
@@ -1579,7 +1575,15 @@ margin-top: 60px;
         height: 100%;
         display: block;
     }
+
+
+    .servicios{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
+
+
 
 
 
