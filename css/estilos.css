@@ -1253,6 +1253,21 @@ main {
   .inicio-home-2 {
     background-position: center;
   }
+
+  .contacto {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contacto-seccion-1 {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+  }
+
+  .contacto-seccion-2 {
+    height: 50vh;
+  }
 }
 /*******FIN MEDIA QUERIES********/
 
