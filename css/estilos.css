@@ -152,6 +152,10 @@ h1, h2, p, button, a, .boton {
   font-family: "outfit-regular";
 }
 
+a:hover {
+  color: #FFF;
+}
+
 /****BOTON*****/
 .boton {
   width: 117px;
@@ -164,6 +168,7 @@ h1, h2, p, button, a, .boton {
   text-decoration: none;
 }
 .boton:hover {
+  color: #FFF;
   background-image: linear-gradient(black, rgb(61, 61, 61));
 }
 
