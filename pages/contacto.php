@@ -40,10 +40,10 @@ $mail->From = $email; // Email desde donde envío el correo.
 $mail->FromName = $nombre;
 $mail->AddAddress($emailDestino); // Esta es la dirección a donde enviamos los datos del formulario
 
-$mail->Subject = "DonWeb - Ejemplo de formulario de contacto"; // Este es el titulo del email.
+$mail->Subject = "Consulta desde sitio v3ktor.com"; // Este es el titulo del email.
 $mensajeHtml = nl2br($mensaje);
-$mail->Body = "{$mensajeHtml} <br /><br />Formulario de ejemplo. By DonWeb<br />"; // Texto del email en formato HTML
-$mail->AltBody = "{$mensaje} \n\n Formulario de ejemplo By DonWeb"; // Texto sin formato HTML
+$mail->Body = "{$mensajeHtml} <br /><br />Formulario v3ktor<br />"; // Texto del email en formato HTML
+$mail->AltBody = "{$mensaje} \n\n Mensaje de v3ktor"; // Texto sin formato HTML
 // FIN - VALORES A MODIFICAR //
 
 $estadoEnvio = $mail->Send(); 

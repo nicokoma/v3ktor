@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/0f64a87ca3.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -81,6 +82,9 @@
                         </div>
                         <div class="mb-3 mensaje">
                           <textarea class="form-control mensaje-form" name="mensaje" placeholder="Escribe tu mensaje...." tabindex="5" required></textarea>
+                        </div>
+                        <div class="mb-3 mensaje">
+                            <div class="g-recaptcha" data-sitekey="6Lda1lUgAAAAAEoeLwQQa7C7iU0MGzmLEK7J4w6C"></div>
                         </div>
                         
                           <button class="boton" name="submit" type="submit" id="contact-submit" data-submit="...Enviar">Enviar</button>

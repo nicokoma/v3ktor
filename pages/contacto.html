@@ -14,7 +14,12 @@
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/0f64a87ca3.js" crossorigin="anonymous"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("demo-form").submit();
+        }
+      </script>
 
 
     <title>Contacto</title>
@@ -70,13 +75,12 @@
                                 <div class="mb-3 mensaje">
                                   <textarea class="form-control mensaje-form" name="mensaje" placeholder="Escribe tu mensaje...." tabindex="5" required></textarea>
                                 </div>
-                                
-                                <button class="g-recaptcha" data-sitekey="6LcILDwgAAAAALpWrogIet7fSvv3tb-Jafzjpssr" data-callback='onSubmit' name="submit" type="submit" data-action='submit'>Submit</button>
-                                <script>
-                                    function onSubmit(token) {
-                                      document.getElementById("demo-form").submit();
-                                    }
-                                  </script>
+                                <div class="mb-3 mensaje">
+                                    <div class="g-recaptcha" data-sitekey="6Lda1lUgAAAAAEoeLwQQa7C7iU0MGzmLEK7J4w6C"></div>
+                                </div>
+                                <div class="mb-3 mensaje">
+                                    <input class="boton" type="submit" value="Enviar">
+                                </div>
                               </form>
                         </div>
                 </div>

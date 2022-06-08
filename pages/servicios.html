@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/0f64a87ca3.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Servicios</title>
 </head>
 <body>
@@ -84,7 +85,7 @@
                     <i class="fa-solid fa-cart-shopping icon-serv"></i>
                     <h2 class="titulo-servicio">E-commerce</h2>
                     <p class="texto">Desarrollamos tiendas online atractivas para aumentar<br> tus posibilidades de ventas.</p>
-                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@mdo">CONSULTAS</button>
+                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">CONSULTAS</button>
                 </div>
             </div>
         </div>
@@ -95,7 +96,7 @@
                     <i class="fa-brands fa-html5 icon-serv"></i>
                     <h2 class="titulo-servicio">Banners HTML5</h2>
                     <p class="texto">Diseño y desarrollo de banners responsive con HTML y CSS.</p>
-                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal3" data-bs-whatever="@mdo">CONSULTAS</button>
+                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">CONSULTAS</button>
                 </div>
             </div>
             <div class="col-lg-6 col-12 center">
@@ -103,7 +104,7 @@
                     <i class="fa-solid fa-code icon-serv"></i>
                     <h2 class="titulo-servicio">Desarrollo Web</h2>
                     <p class="texto">Desarrollo web Full Stack con HTML, CSS y JavaScript.</p>
-                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal4" data-bs-whatever="@mdo">CONSULTAS</button>
+                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">CONSULTAS</button>
                 </div>
             </div>
         </div>
@@ -114,7 +115,7 @@
                     <i class="fa-solid fa-gears icon-serv"></i>
                     <h2 class="titulo-servicio">Mantenimieto</h2>
                     <p class="texto">Backups de archivos y base de datos, actualización de contenidos<br> y migración de servidores.</p>
-                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal5" data-bs-whatever="@mdo">CONSULTAS</button>
+                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">CONSULTAS</button>
                 </div>
             </div>
             <div class="col-lg-6 col-12">
@@ -122,7 +123,7 @@
                     <i class="fa-solid fa-circle-nodes icon-serv"></i>
                     <h2 class="titulo-servicio">Web APIS</h2>
                     <p class="texto">Desarrollo de web APIS para diseñar e integrar el software de las aplicaciones</p>
-                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal6" data-bs-whatever="@mdo">CONSULTAS</button>
+                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">CONSULTAS</button>
                 </div>
             </div>
         </div>
@@ -134,7 +135,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"><b>Diseño Web</b></h5>
+            <h5 class="modal-title" id="exampleModalLabel"><b>Consulta sobre Servicios</b></h5>
             <button type="button" class="cerrar" data-bs-dismiss="modal" aria-label="Close">X</button>
         </div>
             <div class="modal-body">
@@ -148,63 +149,9 @@
                     <div class="mb-3 mensaje">
                       <textarea class="form-control mensaje-form" name="mensaje" placeholder="Escribe tu mensaje...." tabindex="5" required></textarea>
                     </div>
-                    
-                      <button class="boton" name="submit" type="submit" id="contact-submit" data-submit="...Enviar">Enviar</button>
-                    
-                  </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"><b>E-commerce</b></h5>
-            <button type="button" class="cerrar" data-bs-dismiss="modal" aria-label="Close">X</button>
-        </div>
-            <div class="modal-body">
-                <form id="contact" action="contacto.php" method="post">
-                    <div class="mb-3 nombre">
-                      <input  class="form-control form-control-lg" name="nombre" placeholder="Tu nombre" type="text" tabindex="1" required autofocus >
-                    </div>
-                    <div class="mb-3 email">
-                      <input class="form-control form-control-lg" name="email" placeholder="Tu email" type="email" tabindex="2" required>
-                    </div>
                     <div class="mb-3 mensaje">
-                      <textarea class="form-control mensaje-form" name="mensaje" placeholder="Escribe tu mensaje...." tabindex="5" required></textarea>
+                        <div class="g-recaptcha" data-sitekey="6Lda1lUgAAAAAEoeLwQQa7C7iU0MGzmLEK7J4w6C"></div>
                     </div>
-                    
-                      <button class="boton" name="submit" type="submit" id="contact-submit" data-submit="...Enviar">Enviar</button>
-                    
-                  </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"><b>Banners HTML5</b></h5>
-            <button type="button" class="cerrar" data-bs-dismiss="modal" aria-label="Close">X</button>
-        </div>
-            <div class="modal-body">
-                <form id="contact" action="contacto.php" method="post">
-                    <div class="mb-3 nombre">
-                      <input  class="form-control form-control-lg" name="nombre" placeholder="Tu nombre" type="text" tabindex="1" required autofocus >
-                    </div>
-                    <div class="mb-3 email">
-                      <input class="form-control form-control-lg" name="email" placeholder="Tu email" type="email" tabindex="2" required>
-                    </div>
-                    <div class="mb-3 mensaje">
-                      <textarea class="form-control mensaje-form" name="mensaje" placeholder="Escribe tu mensaje...." tabindex="5" required></textarea>
-                    </div>
-                    
                       <button class="boton" name="submit" type="submit" id="contact-submit" data-submit="...Enviar">Enviar</button>
                     
                   </form>
@@ -214,89 +161,6 @@
 </div>
 
 
-
-<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"><b>Desarrollo Web</b></h5>
-            <button type="button" class="cerrar" data-bs-dismiss="modal" aria-label="Close">X</button>
-        </div>
-            <div class="modal-body">
-                <form id="contact" action="contacto.php" method="post">
-                    <div class="mb-3 nombre">
-                      <input  class="form-control form-control-lg" name="nombre" placeholder="Tu nombre" type="text" tabindex="1" required autofocus >
-                    </div>
-                    <div class="mb-3 email">
-                      <input class="form-control form-control-lg" name="email" placeholder="Tu email" type="email" tabindex="2" required>
-                    </div>
-                    <div class="mb-3 mensaje">
-                      <textarea class="form-control mensaje-form" name="mensaje" placeholder="Escribe tu mensaje...." tabindex="5" required></textarea>
-                    </div>
-                    
-                      <button class="boton" name="submit" type="submit" id="contact-submit" data-submit="...Enviar">Enviar</button>
-                    
-                  </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"><b>Mantenimiento</b></h5>
-            <button type="button" class="cerrar" data-bs-dismiss="modal" aria-label="Close">X</button>
-        </div>
-            <div class="modal-body">
-                <form id="contact" action="contacto.php" method="post">
-                    <div class="mb-3 nombre">
-                      <input  class="form-control form-control-lg" name="nombre" placeholder="Tu nombre" type="text" tabindex="1" required autofocus >
-                    </div>
-                    <div class="mb-3 email">
-                      <input class="form-control form-control-lg" name="email" placeholder="Tu email" type="email" tabindex="2" required>
-                    </div>
-                    <div class="mb-3 mensaje">
-                      <textarea class="form-control mensaje-form" name="mensaje" placeholder="Escribe tu mensaje...." tabindex="5" required></textarea>
-                    </div>
-                    
-                      <button class="boton" name="submit" type="submit" id="contact-submit" data-submit="...Enviar">Enviar</button>
-                    
-                  </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"><b>Web APIS</b></h5>
-            <button type="button" class="cerrar" data-bs-dismiss="modal" aria-label="Close">X</button>
-        </div>
-            <div class="modal-body">
-                <form id="contact" action="contacto.php" method="post">
-                    <div class="mb-3 nombre">
-                      <input  class="form-control form-control-lg" name="nombre" placeholder="Tu nombre" type="text" tabindex="1" required autofocus >
-                    </div>
-                    <div class="mb-3 email">
-                      <input class="form-control form-control-lg" name="email" placeholder="Tu email" type="email" tabindex="2" required>
-                    </div>
-                    <div class="mb-3 mensaje">
-                      <textarea class="form-control mensaje-form" name="mensaje" placeholder="Escribe tu mensaje...." tabindex="5" required></textarea>
-                    </div>
-                    
-                      <button class="boton" name="submit" type="submit" id="contact-submit" data-submit="...Enviar">Enviar</button>
-                    
-                  </form>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!--FOOTER-->
 
