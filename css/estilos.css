@@ -526,37 +526,6 @@ main {
   text-align: center;
   height: 400px;
   background: none;
-  /*
-  &:hover{
-
-      box-sizing: border-box;
-      transition-duration: 600ms;
-      background: black;
-
-
-      .texto{
-          color: $blanco;
-      }
-      .titulo-servicio{
-          color: $blanco;
-      }
-
-      .icon-serv{
-          color: $blanco;
-      }
-
-      a{
-          border: 1px solid $blanco;
-      }
-
-
-      a:hover{
-          background:$blanco;
-          color: $negro;
-          transition: 400ms;
-      }
-  }
-  */
 }
 
 .section-video {
@@ -747,27 +716,6 @@ main {
 .servicios-seccion-3 .hijo {
   height: 450px;
   transition: all 1s;
-}
-.servicios-seccion-3 .hijo:hover {
-  background-color: #000;
-}
-.servicios-seccion-3 .hijo:hover .titulo-servicio {
-  color: #FFF;
-}
-.servicios-seccion-3 .hijo:hover .icon-serv {
-  color: #FFF;
-}
-.servicios-seccion-3 .hijo:hover .texto {
-  color: #FFF;
-}
-.servicios-seccion-3 .hijo:hover .boton {
-  background-color: #FFF;
-  color: #000;
-  border: 1px solid #FFF;
-}
-.servicios-seccion-3 .hijo:hover .boton:hover {
-  background-color: #000;
-  color: #FFF;
 }
 
 .contacto {

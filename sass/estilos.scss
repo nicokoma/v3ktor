@@ -596,37 +596,6 @@ main{
         height: 400px;
         background: none;
 
-        /*
-        &:hover{
-            
-            box-sizing: border-box;
-            transition-duration: 600ms;
-            background: black;
-            
-
-            .texto{
-                color: $blanco;
-            }
-            .titulo-servicio{
-                color: $blanco;
-            }
-
-            .icon-serv{
-                color: $blanco;
-            }
-
-            a{
-                border: 1px solid $blanco;
-            }
-
-
-            a:hover{
-                background:$blanco;
-                color: $negro;
-                transition: 400ms;
-            }
-        }
-        */
     }
 }
 
@@ -885,40 +854,6 @@ margin-top: 60px;
 .hijo{
     height: 450px;
     transition: all 1s;
-
-    &:hover{
-        background-color: $negro;
-        //animation: fadeIn;
-        //animation-duration: 1s;
-        
-    
-
-
-
-        .titulo-servicio{
-            color: $blanco;
-        }
-
-        .icon-serv{
-            color: $blanco;
-        }
-
-        .texto{
-            color: $blanco;
-        }
-
-        .boton{
-            background-color: $blanco;
-            color: $negro;
-            border: 1px solid $blanco;
-            
-            &:hover{
-                background-color: $negro;
-                color: $blanco;
-            }
-        }
-        
-    }
 }
 }
 
